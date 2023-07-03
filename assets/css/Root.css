@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
+.ff_jost {
+  font-family: "Jost", sans-serif;
+}
+
+.ff_montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ff_gilroy_regular {
+  font-family: Gilroy_regular;
+}
+
+.ff_gilroy_medium {
+  font-family: Gilroy_medium;
+}
+
+.ff_gilroy_semiBold {
+  font-family: Gilroy_semiBold;
+}
+
+.ff_gilroy_bold {
+  font-family: Gilroy_Bold;
+}
+
+@font-face {
+  font-family: Gilroy_regular;
+
+  src: url("../fonts/Gilroy-Regular.ttf");
+}
+
+@font-face {
+  font-family: Gilroy_medium;
+
+  src: url("../fonts/Gilroy-Medium.ttf");
+}
+
+@font-face {
+  font-family: Gilroy_semiBold;
+
+  src: url("../fonts/Gilroy-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: Gilroy_Bold;
+
+  src: url("../fonts/Gilroy-Bold.ttf");
+}
+:root {
+  /* font-size */
+  --text-xsm: 14px;
+  --text-base: 16px;
+  --text-sm: 18px;
+  --text-md: 20px;
+  --text-xl: 22px;
+  --text-2xl: 24px;
+  --text-2xxl: 27.48px;
+  --text-3xl: 34px;
+  --text-3xxl: 38px;
+  --text-4xl: 48px;
+  --text-5xl: 54px;
+  /* font-weight */
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  /* text-color */
+  --text-white: #ffffff;
+  --text-secondary: #0219f7;
+  --text-light-gray: #c9cccd;
+  --text-gray: #b3bac2;
+  --text-dark-gray: #9cabaf;
+  /* bg-color */
+  --bg-dark: #000000;
+}
+/* font-size */
+.text_xsm {
+  font-size: var(--text-xsm);
+}
+
+.text_base {
+  font-size: var(--text-base);
+}
+
+.text_sm {
+  font-size: var(--text-sm);
+}
+
+.text_md {
+  font-size: var(--text-md);
+}
+
+.text_xl {
+  font-size: var(--text-xl);
+}
+
+.text_2xl {
+  font-size: var(--text-2xl);
+}
+
+.text_2xxl {
+  font-size: var(--text-2xxl);
+}
+
+.text_3xl {
+  font-size: var(--text-3xl);
+}
+
+.text_3xxl {
+  font-size: var(--text-3xxl);
+}
+
+.text_4xl {
+  font-size: var(--text-4xl);
+}
+
+.text_5xl {
+  font-size: var(--text-5xl);
+}
+
+/* font-weight */
+
+.fw_normal {
+  font-weight: var(--fw-normal);
+}
+
+.fw_medium {
+  font-weight: var(--fw-medium);
+}
+
+.fw_semibold {
+  font-weight: var(--fw-semibold);
+}
+
+.fw_bold {
+  font-weight: var(--fw-bold);
+}
+
+/* text-color */
+
+.text_white {
+  color: var(--text-white);
+}
+
+.text_secondary {
+  color: var(--text-secondary);
+}
+
+.text_light_gray {
+  color: var(--text-light-gray);
+}
+
+.text_gray {
+  color: var(--text-gray);
+}
+
+.text_dark_gray {
+  color: var(--text-dark-gray);
+}
+
+/* bg-color */
+
+.bg_dark {
+  background-color: var(--bg-dark);
+}
