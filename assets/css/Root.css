@@ -60,11 +60,10 @@
   --text-3xxl: 38px;
   --text-4xl: 48px;
   --text-5xl: 54px;
-  /* font-weight */
-  --fw-normal: 400;
-  --fw-medium: 500;
-  --fw-semibold: 600;
-  --fw-bold: 700;
+  /* lh */
+  --lh-35: 35px;
+  --lh-55: 55px;
+
   /* text-color */
   --text-white: #ffffff;
   --text-secondary: #0219f7;
@@ -119,22 +118,14 @@
   font-size: var(--text-5xl);
 }
 
-/* font-weight */
+/* line-height */
 
-.fw_normal {
-  font-weight: var(--fw-normal);
+.lh_35 {
+  line-height: var(--lh-35);
 }
 
-.fw_medium {
-  font-weight: var(--fw-medium);
-}
-
-.fw_semibold {
-  font-weight: var(--fw-semibold);
-}
-
-.fw_bold {
-  font-weight: var(--fw-bold);
+.lh_55 {
+  line-height: var(--lh-55);
 }
 
 /* text-color */
