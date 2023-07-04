@@ -29,7 +29,7 @@
   padding: 0%;
   margin: 0%;
   text-decoration: none !important;
-  list-style-type: none !important;
+  list-style-type: none;
   box-sizing: border-box;
 }
 .text_shadow {
@@ -41,12 +41,19 @@
 .menuBtn {
   width: 35px;
   height: 20px;
+  rotate: 180deg;
 }
 
 .menuLines1,
-.menuLines2,
 .menuLines3 {
   width: 100%;
+  height: 0;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+.menuLines2 {
+  width: 75%;
   height: 0;
   border: 2px solid white;
   border-radius: 5px;
@@ -65,30 +72,6 @@
 .hero_sec {
   z-index: 1;
   position: relative;
-}
-
-@media (max-width: 992px) {
-  #OpenNav {
-    position: absolute;
-    width: 100%;
-    min-height: 100vh;
-    background: rgb(212, 9, 9);
-    top: 0;
-    left: -100%;
-    transition: ease-in-out 400ms;
-    z-index: 999 !important;
-  }
-
-  .hero_sec {
-    z-index: -1 !important;
-    position: relative;
-  }
-
-  .ShowNav {
-    z-index: 99 !important;
-    left: 0% !important;
-    background: #000;
-  }
 }
 
 button.common_btn:hover svg path {
@@ -186,6 +169,7 @@ h1 {
 .z_icon_img {
   top: 20%;
   left: 50%;
+  width: 138px;
 }
 .hero_bottom_layer {
   background: linear-gradient(
@@ -205,6 +189,70 @@ h1 {
 .left_8 {
   right: -8%;
 }
+.w_80 {
+  width: 80% !important;
+}
+.width_custom {
+  width: 1240px;
+}
+
+.moving_animation {
+  position: relative;
+  animation: slide 15s linear 0s infinite forwards;
+}
+@keyframes slide {
+  0% {
+    left: 0%;
+  }
+  50% {
+    left: -50%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+/* brands */
+.before_line::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: #02a9f7;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -55%;
+}
+.before_line::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background-color: #02a9f7;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 105%;
+}
+/* message to our future partner */
+
+.partner_bg_clr {
+  background: #002334;
+  border-radius: 5px;
+}
+
+ul div span::before {
+  position: relative;
+  content: "•";
+  color: white;
+  margin-right: 4px;
+}
+.doted_line {
+  border: 1px dashed #626262;
+}
+.frame_img_size {
+  height: 2495px;
+}
+
 @media (max-width: 1920px) {
   .min_vh_100 {
     min-height: 100vh;
@@ -213,4 +261,41 @@ h1 {
 @media (max-width: 1440px) {
 }
 @media (max-width: 1200px) {
+}
+
+@media (max-width: 992px) {
+  #OpenNav {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(0, 0, 0);
+    top: 0;
+    left: -100%;
+    transition: ease-in-out 400ms;
+    z-index: 999 !important;
+  }
+
+  .hero_sec {
+    z-index: -1 !important;
+    position: relative;
+  }
+
+  .ShowNav {
+    z-index: 99 !important;
+    left: 0% !important;
+    background: #000;
+  }
+}
+@media (max-width: 575.99px) {
+  .z_icon_img {
+    top: 20%;
+    left: 50%;
+    width: 90px;
+  }
+  .z_icon_hero {
+    width: 90px;
+  }
+  .w_xsm_100 {
+    width: 100%;
+  }
 }
