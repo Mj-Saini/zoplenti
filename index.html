@@ -31,7 +31,9 @@
     />
   </head>
   <body class="bg-black">
-    <div class="min_vh_100 hero_bg_img d-flex flex-column">
+    <div
+      class="min_vh_100 hero_bg_img d-flex flex-column pb-5 position-relative overflow-hidden"
+    >
       <!-- Header section -->
 
       <navbar class="position-relative z-1">
@@ -130,6 +132,7 @@
               Work With Us
             </button>
             <div
+              style="z-index: 100; position: relative"
               onclick=" menu()"
               class="d-lg-none z-1 menuBtn d-flex flex-column justify-content-between"
             >
@@ -144,15 +147,25 @@
       <!-- Hero-section -->
       <section
         id="hero"
-        class="flex-grow-1 d-flex align-items-center justify-content-center position-relative mt-5"
+        class="flex-grow-1 d-flex hero_sec align-items-center justify-content-center position-relative mt-5 pb-5"
       >
+        <img
+          class="position-absolute top-50 left_8 translate-middle-y"
+          src="./assets/images/svg/z-icon-in-body.svg"
+          alt="icon"
+        />
+        <img
+          class="position-absolute top-50 right_8 translate-middle-y"
+          src="./assets/images/svg/z-icon-in-body.svg"
+          alt="icon"
+        />
         <span class="page_shadow position-absolute hero_sec_shadow z-0"></span>
         <span class="page_shadow position-absolute end-0 top-0 z-0"></span>
-        <div class="container z-1">
+        <div class="container z-1 position-relative">
           <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-8">
               <div
-                class="d-flex flex-column justify-content-center align-items-center w-100 px-4"
+                class="d-flex flex-column justify-content-center align-items-center w-100 px-lg-4 z-0 position-relative"
               >
                 <h1
                   class="ff_gilroy_bold fw-bold text_4xl text-white lh_55 text-center mb-0"
@@ -161,19 +174,19 @@
                 </h1>
 
                 <p
-                  class="ff_gilroy_regular text_xl text-white lh_35 text-center px-4 pt-3 mb-0"
+                  class="ff_gilroy_regular text_xl text-white lh_35 text-center px-lg-4 pt-3 mb-0"
                 >
                   We are a top Amazon retailer focused on delivering results
                   aligned with your brand's vision.
                 </p>
-                <span class="mt-4 pt-1 pb-4">
-                  <button class="hero_btn d-lg-flex d-none ff_gilroy_medium">
+                <span class="mt-4 pt-1">
+                  <button class="hero_btn ff_gilroy_medium">
                     Work With Us
                   </button></span
                 >
-                <div class="mt-5 position-relative mb-5">
+                <div class="my-5 position-relative">
                   <img
-                    class="position-absolute top-0 mt-4 start-50 translate-middle"
+                    class="position-absolute z_icon_img translate-middle"
                     src="./assets/images/svg/z-icon.svg"
                     alt="img"
                   />
@@ -183,7 +196,7 @@
                     alt="img"
                   />
                   <div
-                    class="hero_counter_bg position-absolute top-100 translate-middle w-75 start-50"
+                    class="hero_counter_bg position-absolute translate-middle w-75 start-50"
                   >
                     <div class="text-center">
                       <div class="row justify-content-center">
@@ -244,7 +257,143 @@
           </div>
         </div>
       </section>
+      <div
+        class="hero_bottom_layer position-absolute bottom-0 w-100 d-flex justify-content-center align-items-end"
+      >
+        <svg
+          id="Partners"
+          width="54"
+          height="53"
+          viewBox="0 0 54 53"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g opacity="0.7">
+            <path
+              d="M33.833 33.6938L27.8267 39.7003V11.7972C27.8267 11.3424 27.4579 10.9736 27.0031 10.9736C26.5482 10.9736 26.1795 11.3424 26.1795 11.7972V39.7003L20.173 33.6939C19.8539 33.3857 19.3479 33.3857 19.0287 33.6939C18.7016 34.0099 18.6926 34.5313 19.0085 34.8584L26.4201 42.27C26.4957 42.3457 26.5857 42.4064 26.6859 42.4482C26.7854 42.4897 26.8931 42.5122 27.0031 42.512C27.0206 42.512 27.0362 42.5031 27.0534 42.502C27.1454 42.4963 27.2367 42.483 27.3206 42.4479C27.4211 42.4059 27.5115 42.3449 27.5872 42.2688L34.9975 34.8584C35.3058 34.5392 35.3058 34.0333 34.9975 33.7141C34.6815 33.3869 34.1601 33.3779 33.833 33.6938Z"
+              fill="#02A9F7"
+            />
+            <rect
+              x="1.49219"
+              y="1.23535"
+              width="51.0146"
+              height="51.0146"
+              rx="25.5073"
+              stroke="#02A9F7"
+              stroke-width="1.5"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
+    <!-- Leading-Brands -->
+    <section>
+      <div class="container"><div class="div"></div></div>
+    </section>
+    <!-- Message to future partners -->
+    <section id="Partners"><div class="container"></div></section>
+
+    <!-- Footer -->
+    <!-- <section class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div>
+              <span
+                class="mb-0 logo ff_jost fw-medium text-white text_3xl lh_49 cursor_pointer text-uppercase"
+              >
+                <img
+                  class="pb-2 pe-0"
+                  width="58.26"
+                  height="46"
+                  src="./assets/images//svg/zoplenti-logo.svg"
+                  alt=""
+                />
+                Zoplenti
+              </span>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row justify-content-between">
+              <div class="col-4">
+                <h2 class="ff_gilroy_semiBold text_base text-white lh_25">
+                  Headquarters
+                </h2>
+                <span>
+                  <a class="ff_gilroy_regular text_base text_gray" href="#">
+                    401 East Jackson St.
+                    <span class="d-block">Suite 2340</span> Tampa, FL 33602
+                  </a>
+                </span>
+              </div>
+              <div class="col-4">
+                <h2 class="ff_gilroy_semiBold text_sm text-white lh_25">
+                  Have a question?
+                </h2>
+                <div class="d-flex flex-column">
+                  <span>
+                    <a
+                      class="ff_gilroy_regular text_base text-white lh_25 d-inline-block"
+                      href="mailto:partners@zoplenti.com"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.7">
+                          <path
+                            d="M14.5078 3.32812H2.50781C2.2426 3.32813 1.98824 3.43348 1.80071 3.62102C1.61317 3.80855 1.50781 4.06291 1.50781 4.32812V12.3281C1.50781 12.5933 1.61317 12.8477 1.80071 13.0352C1.98824 13.2228 2.2426 13.3281 2.50781 13.3281H14.5078C14.773 13.3281 15.0274 13.2228 15.2149 13.0352C15.4025 12.8477 15.5078 12.5933 15.5078 12.3281V4.32812C15.5078 4.06291 15.4025 3.80855 15.2149 3.62102C15.0274 3.43348 14.773 3.32813 14.5078 3.32812ZM13.4078 4.32812L8.50781 7.71812L3.60781 4.32812H13.4078ZM2.50781 12.3281V4.78312L8.22281 8.73812C8.30651 8.79619 8.40595 8.8273 8.50781 8.8273C8.60968 8.8273 8.70911 8.79619 8.79281 8.73812L14.5078 4.78312V12.3281H2.50781Z"
+                            fill="white"
+                          />
+                        </g>
+                      </svg>
+
+                      partners@zoplenti.com
+                    </a>
+                  </span>
+                  <span>
+                    <a
+                      class="ff_gilroy_regular text_base text-white lh_25 d-inline-block"
+                      href="tel:833-838-9101"
+                    >
+                      <svg
+                        width="17"
+                        height="17"
+                        viewBox="0 0 17 17"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g opacity="0.7">
+                          <path
+                            d="M14.4059 10.3099L11.4616 8.9905L11.4534 8.98675C11.3006 8.92137 11.1338 8.89513 10.9683 8.91041C10.8028 8.92569 10.6436 8.982 10.5053 9.07425C10.489 9.085 10.4734 9.09669 10.4584 9.10925L8.93719 10.4061C7.97344 9.938 6.97844 8.9505 6.51032 7.99925L7.80907 6.45487C7.82157 6.43925 7.83344 6.42362 7.84469 6.40675C7.93496 6.26881 7.98973 6.1107 8.00412 5.94648C8.01852 5.78226 7.99209 5.61703 7.92719 5.4655V5.458L6.60407 2.50862C6.51828 2.31066 6.37077 2.14576 6.18356 2.03852C5.99635 1.93129 5.77948 1.88747 5.56532 1.91362C4.71842 2.02507 3.94106 2.44098 3.3784 3.08368C2.81575 3.72639 2.50629 4.55193 2.50782 5.40612C2.50782 10.3686 6.54532 14.4061 11.5078 14.4061C12.362 14.4077 13.1876 14.0982 13.8303 13.5355C14.473 12.9729 14.8889 12.1955 15.0003 11.3486C15.0265 11.1345 14.9828 10.9177 14.8757 10.7305C14.7686 10.5433 14.6038 10.3958 14.4059 10.3099ZM11.5078 13.4061C9.3868 13.4038 7.35331 12.5602 5.85352 11.0604C4.35373 9.56063 3.51013 7.52714 3.50782 5.40612C3.50547 4.7958 3.72535 4.2055 4.1264 3.74544C4.52746 3.28538 5.08226 2.98704 5.68719 2.90612C5.68695 2.90862 5.68695 2.91113 5.68719 2.91362L6.99969 5.85112L5.70782 7.39737C5.69471 7.41246 5.68279 7.42855 5.67219 7.4455C5.57814 7.58982 5.52296 7.756 5.51201 7.92791C5.50106 8.09983 5.53471 8.27166 5.60969 8.42675C6.17594 9.58487 7.34282 10.743 8.51344 11.3086C8.66967 11.3829 8.8425 11.4154 9.01503 11.4029C9.18757 11.3904 9.35392 11.3334 9.49782 11.2374C9.51386 11.2266 9.52931 11.2149 9.54407 11.2024L11.0634 9.90612L14.0009 11.2217H14.0078C13.9279 11.8275 13.63 12.3835 13.1699 12.7855C12.7097 13.1876 12.1189 13.4082 11.5078 13.4061Z"
+                            fill="white"
+                          />
+                        </g>
+                      </svg>
+
+                      833-838-9101
+                    </a>
+                  </span>
+                </div>
+              </div>
+              <div class="col-3">
+                <h2 class="ff_gilroy_semiBold text_sm text-white lh_25">
+                  Let's build a win-win partnership.
+                </h2>
+
+                <button class="hero_btn d-lg-flex d-none ff_gilroy_medium mt-5">
+                  Work With Us
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>

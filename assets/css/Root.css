@@ -61,7 +61,10 @@
   --text-4xl: 48px;
   --text-5xl: 54px;
   /* lh */
+  --lh-25: 25px;
+  --lh-28: 28px;
   --lh-35: 35px;
+  --lh-49: 49px;
   --lh-55: 55px;
 
   /* text-color */
@@ -120,10 +123,19 @@
 
 /* line-height */
 
+.lh_25 {
+  line-height: var(--lh-25);
+}
+.lh_28 {
+  line-height: var(--lh-28);
+}
 .lh_35 {
   line-height: var(--lh-35);
 }
 
+.lh_49 {
+  line-height: var(--lh-49);
+}
 .lh_55 {
   line-height: var(--lh-55);
 }
@@ -154,4 +166,92 @@
 
 .bg_dark {
   background-color: var(--bg-dark);
+}
+@media (max-width: 1200px) {
+  :root {
+    /* font-size */
+    --text-xsm: 14px;
+    --text-base: 16px;
+    --text-sm: 18px;
+    --text-md: 20px;
+    --text-xl: 22px;
+    --text-2xl: 24px;
+    --text-2xxl: 27.48px;
+    --text-3xl: 34px;
+    --text-3xxl: 38px;
+    --text-4xl: 48px;
+    --text-5xl: 54px;
+    /* lh */
+    --lh-25: 25px;
+    --lh-28: 28px;
+    --lh-35: 35px;
+    --lh-49: 49px;
+    --lh-55: 55px;
+  }
+}
+@media (max-width: 991.99px) {
+  :root {
+    /* font-size */
+    --text-xsm: 14px;
+    --text-base: 16px;
+    --text-sm: 18px;
+    --text-md: 20px;
+    --text-xl: 22px;
+    --text-2xl: 24px;
+    --text-2xxl: 27.48px;
+    --text-3xl: 34px;
+    --text-3xxl: 38px;
+    --text-4xl: 48px;
+    --text-5xl: 54px;
+    /* lh */
+    --lh-25: 25px;
+    --lh-28: 28px;
+    --lh-35: 35px;
+    --lh-49: 49px;
+    --lh-55: 55px;
+  }
+}
+@media (max-width: 767.99px) {
+  :root {
+    /* font-size */
+    --text-xsm: 14px;
+    --text-base: 16px;
+    --text-sm: 18px;
+    --text-md: 20px;
+    --text-xl: 22px;
+    --text-2xl: 24px;
+    --text-2xxl: 27.48px;
+    --text-3xl: 34px;
+    --text-3xxl: 38px;
+    --text-4xl: 40px;
+    --text-5xl: 54px;
+    /* lh */
+    --lh-25: 25px;
+    --lh-28: 28px;
+    --lh-35: 35px;
+    --lh-49: 49px;
+    --lh-55: 55px;
+  }
+}
+@media (max-width: 575.99px) {
+  :root {
+    /* font-size */
+    --text-xsm: 14px;
+    --text-base: 16px;
+    --text-sm: 18px;
+    --text-md: 20px;
+    --text-xl: 16px;
+    --text-2xl: 24px;
+    --text-2xxl: 27.48px;
+    --text-3xl: 34px;
+    --text-3xxl: 38px;
+    --text-4xl: 28px;
+    --text-5xl: 54px;
+    /* lh */
+    --lh-25: 25px;
+    --lh-28: 28px;
+    --lh-35: 25px;
+    --lh-49: 49px;
+    --lh-55: 40px;
+  }
 }
