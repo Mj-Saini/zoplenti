@@ -31,227 +31,233 @@
     />
   </head>
   <body class="bg-black">
-    <div
-      class="min_vh_100 hero_bg_img d-flex flex-column pb-5 position-relative overflow-hidden"
-    >
-      <!-- Header section -->
+    <div class="overflow-hidden">
+      <div
+        class="min_vh_100 hero_bg_img d-flex flex-column pb-5 position-relative"
+      >
+        <!-- Header section -->
 
-      <navbar class="position-relative z-1">
-        <div class="container pt-4 mt-1">
-          <div class="d-flex justify-content-between align-items-center">
-            <span
-              class="mb-0 logo ff_jost fw-medium text-white text_2xxl cursor_pointer text-uppercase"
-            >
-              <img
-                class="pb-2 pe-0"
-                width="47"
-                height="38"
-                src="./assets/images//svg/zoplenti-logo.svg"
-                alt=""
-              />Zoplenti</span
-            >
-            <ul
-              id="OpenNav"
-              class="d-flex list-unstyled gap-2 gap-xl-3 flex-column flex-lg-row justify-content-center align-items-center ps-0 mb-0"
-            >
-              <img
-                onclick=" menu()"
-                class="d-lg-none mb-2"
-                src="./assets/images/svg/cross_icon.svg"
-                alt="icon"
-              />
-              <li>
-                <a
-                  class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
-                  href="#"
-                  >Why</a
-                >
-              </li>
-              <li>
-                <a
-                  class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
-                  href="#"
-                  >How We Work</a
-                >
-              </li>
-              <li>
-                <div class="dropdown">
-                  <button
-                    class="btn btn-secondary dropdown-toggle ff_gilroy_regular fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
-                    type="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    About Us
-                    <svg
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M7.125 10.6992L11.725 15.2992C11.825 15.3992 11.9333 15.4699 12.05 15.5112C12.1667 15.5526 12.2917 15.5736 12.425 15.5742C12.5583 15.5742 12.6833 15.5532 12.8 15.5112C12.9167 15.4692 13.025 15.3986 13.125 15.2992L17.725 10.6992C17.9083 10.5159 18 10.2826 18 9.99922C18 9.71589 17.9083 9.48255 17.725 9.29922C17.5417 9.11589 17.3083 9.02422 17.025 9.02422C16.7417 9.02422 16.5083 9.11589 16.325 9.29922L12.425 13.1992L8.525 9.29922C8.34167 9.11589 8.10833 9.02422 7.825 9.02422C7.54167 9.02422 7.30833 9.11589 7.125 9.29922C6.94167 9.48255 6.85 9.71589 6.85 9.99922C6.85 10.2826 6.94167 10.5159 7.125 10.6992Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                  <ul class="dropdown-menu px-0">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">Another action</a>
-                    </li>
-                    <li>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li>
-                <a
-                  class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
-                  href="#"
-                  >Customer Support</a
-                >
-              </li>
-              <li>
-                <a
-                  class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
-                  href="#"
-                  >Shop</a
-                >
-              </li>
-            </ul>
-            <button class="common_btn d-lg-flex d-none ff_gilroy_medium">
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+        <navbar class="position-relative z-1">
+          <div class="container pt-4 mt-1">
+            <div class="d-flex justify-content-between align-items-center">
+              <span
+                class="mb-0 logo ff_jost fw-medium text-white text_2xxl cursor_pointer text-uppercase"
               >
-                <path
-                  d="M11.1922 17.8686C11.0347 18.0261 10.7547 18.0524 10.5709 17.8686C10.4889 17.786 10.4429 17.6744 10.4429 17.558C10.4429 17.4416 10.4889 17.33 10.5709 17.2474L13.5372 14.2811L12.3034 13.0474L9.33715 16.0136C9.1709 16.1886 8.8909 16.1799 8.7159 16.0136C8.63394 15.931 8.58794 15.8194 8.58794 15.703C8.58794 15.5866 8.63394 15.475 8.7159 15.3924L11.6822 12.4261L10.4484 11.1924L7.48215 14.1586C7.32466 14.3161 7.04465 14.3424 6.8609 14.1586C6.78079 14.075 6.73607 13.9637 6.73607 13.848C6.73607 13.7322 6.78079 13.6209 6.8609 13.5374L9.82715 10.5711L8.58465 9.33736L5.6184 12.3036C5.4609 12.4611 5.1809 12.4874 4.99715 12.3036C4.91704 12.22 4.87232 12.1087 4.87232 11.993C4.87232 11.8772 4.91704 11.7659 4.99715 11.6824L8.82965 7.84986L10.4659 9.47736C11.2972 10.3086 12.7322 10.2999 13.5634 9.47736C14.4209 8.61986 14.4209 7.23736 13.5634 6.37986L11.9359 4.75236L12.1809 4.50736C12.8634 3.82486 13.9747 3.82486 14.6572 4.50736L18.3672 8.21736C19.0497 8.89986 19.0497 10.0111 18.3672 10.6936L11.1922 17.8686ZM19.6009 11.9361C20.2564 11.2787 20.6245 10.3882 20.6245 9.45986C20.6245 8.53149 20.2564 7.64101 19.6009 6.98361L15.8909 3.27361C15.2335 2.6181 14.343 2.25 13.4147 2.25C12.4863 2.25 11.5958 2.6181 10.9384 3.27361L10.6934 3.51861L10.4484 3.27361C9.79101 2.6181 8.90052 2.25 7.97215 2.25C7.04379 2.25 6.1533 2.6181 5.4959 3.27361L2.3984 6.37111C1.80647 6.96102 1.44564 7.74361 1.38143 8.57684C1.31721 9.41007 1.55385 10.2387 2.0484 10.9124L3.31715 9.64361C3.14801 9.31335 3.08822 8.93788 3.14641 8.57141C3.2046 8.20495 3.37777 7.86647 3.6409 7.60486L6.7384 4.50736C7.42091 3.82486 8.53215 3.82486 9.21465 4.50736L12.3297 7.62236C12.4872 7.77986 12.5134 8.05986 12.3297 8.24361C12.1459 8.42736 11.8659 8.40111 11.7084 8.24361L8.82965 5.37361L3.75465 10.4399C2.89715 11.2886 2.89715 12.6799 3.75465 13.5374C4.0959 13.8786 4.5334 14.0886 4.99715 14.1499C5.05843 14.6204 5.27357 15.0574 5.60909 15.3929C5.9446 15.7284 6.38164 15.9436 6.85216 16.0049C6.91343 16.4754 7.12857 16.9124 7.46409 17.2479C7.7996 17.5834 8.23664 17.7986 8.70715 17.8599C8.7684 18.3324 8.9784 18.7611 9.31965 19.1024C9.7309 19.5136 10.2822 19.7411 10.8684 19.7411C11.4547 19.7411 12.0059 19.5136 12.4172 19.1024L19.6009 11.9361Z"
-                  fill="#02A9F7"
+                <img
+                  class="pb-2 pe-0"
+                  width="47"
+                  height="38"
+                  src="./assets/images//svg/zoplenti-logo.svg"
+                  alt=""
+                />Zoplenti</span
+              >
+              <ul
+                id="OpenNav"
+                class="d-flex list-unstyled gap-2 gap-xl-3 flex-column flex-lg-row justify-content-center align-items-center ps-0 mb-0"
+              >
+                <img
+                  onclick=" menu()"
+                  class="d-lg-none mb-2"
+                  src="./assets/images/svg/cross_icon.svg"
+                  alt="icon"
                 />
-              </svg>
-              Work With Us
-            </button>
-            <div
-              style="z-index: 100; position: relative"
-              onclick=" menu()"
-              class="d-lg-none z-1 menuBtn d-flex flex-column justify-content-between"
-            >
-              <div class="menuLines1"></div>
-              <div class="menuLines2"></div>
-              <div class="menuLines3"></div>
+                <li>
+                  <a
+                    class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
+                    href="#"
+                    >Why</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
+                    href="#"
+                    >How We Work</a
+                  >
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-secondary dropdown-toggle ff_gilroy_regular fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About Us
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M7.125 10.6992L11.725 15.2992C11.825 15.3992 11.9333 15.4699 12.05 15.5112C12.1667 15.5526 12.2917 15.5736 12.425 15.5742C12.5583 15.5742 12.6833 15.5532 12.8 15.5112C12.9167 15.4692 13.025 15.3986 13.125 15.2992L17.725 10.6992C17.9083 10.5159 18 10.2826 18 9.99922C18 9.71589 17.9083 9.48255 17.725 9.29922C17.5417 9.11589 17.3083 9.02422 17.025 9.02422C16.7417 9.02422 16.5083 9.11589 16.325 9.29922L12.425 13.1992L8.525 9.29922C8.34167 9.11589 8.10833 9.02422 7.825 9.02422C7.54167 9.02422 7.30833 9.11589 7.125 9.29922C6.94167 9.48255 6.85 9.71589 6.85 9.99922C6.85 10.2826 6.94167 10.5159 7.125 10.6992Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <ul class="dropdown-menu px-0">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li>
+                        <a class="dropdown-item" href="#">Another action</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"
+                          >Something else here</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a
+                    class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
+                    href="#"
+                    >Customer Support</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="ff_gilroy_regular me-1 fw-normal bottom_line position-relative transition_all text_stroke text_base text-white opacity-75"
+                    href="#"
+                    >Shop</a
+                  >
+                </li>
+              </ul>
+              <button class="common_btn d-lg-flex d-none ff_gilroy_medium">
+                <svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.1922 17.8686C11.0347 18.0261 10.7547 18.0524 10.5709 17.8686C10.4889 17.786 10.4429 17.6744 10.4429 17.558C10.4429 17.4416 10.4889 17.33 10.5709 17.2474L13.5372 14.2811L12.3034 13.0474L9.33715 16.0136C9.1709 16.1886 8.8909 16.1799 8.7159 16.0136C8.63394 15.931 8.58794 15.8194 8.58794 15.703C8.58794 15.5866 8.63394 15.475 8.7159 15.3924L11.6822 12.4261L10.4484 11.1924L7.48215 14.1586C7.32466 14.3161 7.04465 14.3424 6.8609 14.1586C6.78079 14.075 6.73607 13.9637 6.73607 13.848C6.73607 13.7322 6.78079 13.6209 6.8609 13.5374L9.82715 10.5711L8.58465 9.33736L5.6184 12.3036C5.4609 12.4611 5.1809 12.4874 4.99715 12.3036C4.91704 12.22 4.87232 12.1087 4.87232 11.993C4.87232 11.8772 4.91704 11.7659 4.99715 11.6824L8.82965 7.84986L10.4659 9.47736C11.2972 10.3086 12.7322 10.2999 13.5634 9.47736C14.4209 8.61986 14.4209 7.23736 13.5634 6.37986L11.9359 4.75236L12.1809 4.50736C12.8634 3.82486 13.9747 3.82486 14.6572 4.50736L18.3672 8.21736C19.0497 8.89986 19.0497 10.0111 18.3672 10.6936L11.1922 17.8686ZM19.6009 11.9361C20.2564 11.2787 20.6245 10.3882 20.6245 9.45986C20.6245 8.53149 20.2564 7.64101 19.6009 6.98361L15.8909 3.27361C15.2335 2.6181 14.343 2.25 13.4147 2.25C12.4863 2.25 11.5958 2.6181 10.9384 3.27361L10.6934 3.51861L10.4484 3.27361C9.79101 2.6181 8.90052 2.25 7.97215 2.25C7.04379 2.25 6.1533 2.6181 5.4959 3.27361L2.3984 6.37111C1.80647 6.96102 1.44564 7.74361 1.38143 8.57684C1.31721 9.41007 1.55385 10.2387 2.0484 10.9124L3.31715 9.64361C3.14801 9.31335 3.08822 8.93788 3.14641 8.57141C3.2046 8.20495 3.37777 7.86647 3.6409 7.60486L6.7384 4.50736C7.42091 3.82486 8.53215 3.82486 9.21465 4.50736L12.3297 7.62236C12.4872 7.77986 12.5134 8.05986 12.3297 8.24361C12.1459 8.42736 11.8659 8.40111 11.7084 8.24361L8.82965 5.37361L3.75465 10.4399C2.89715 11.2886 2.89715 12.6799 3.75465 13.5374C4.0959 13.8786 4.5334 14.0886 4.99715 14.1499C5.05843 14.6204 5.27357 15.0574 5.60909 15.3929C5.9446 15.7284 6.38164 15.9436 6.85216 16.0049C6.91343 16.4754 7.12857 16.9124 7.46409 17.2479C7.7996 17.5834 8.23664 17.7986 8.70715 17.8599C8.7684 18.3324 8.9784 18.7611 9.31965 19.1024C9.7309 19.5136 10.2822 19.7411 10.8684 19.7411C11.4547 19.7411 12.0059 19.5136 12.4172 19.1024L19.6009 11.9361Z"
+                    fill="#02A9F7"
+                  />
+                </svg>
+                Work With Us
+              </button>
+              <div
+                style="z-index: 100; position: relative"
+                onclick=" menu()"
+                class="d-lg-none z-1 menuBtn d-flex flex-column justify-content-between"
+              >
+                <div class="menuLines1"></div>
+                <div class="menuLines2"></div>
+                <div class="menuLines3"></div>
+              </div>
             </div>
           </div>
-        </div>
-      </navbar>
+        </navbar>
 
-      <!-- Hero-section -->
-      <section
-        id="hero"
-        class="flex-grow-1 d-flex hero_sec align-items-center justify-content-center position-relative mt-5 pb-5"
-      >
-        <img
-          class="position-absolute top-50 left_8 translate-middle-y z_icon_hero"
-          src="./assets/images/svg/z-icon-in-body.svg"
-          alt="icon"
-        />
-        <img
-          class="position-absolute top-50 right_8 translate-middle-y z_icon_hero"
-          src="./assets/images/svg/z-icon-in-body.svg"
-          alt="icon"
-        />
-        <span class="page_shadow position-absolute hero_sec_shadow z-0"></span>
-        <span class="page_shadow position-absolute end-0 top-0 z-0"></span>
-        <div class="container z-1 position-relative">
-          <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8">
-              <div
-                class="d-flex flex-column justify-content-center align-items-center w-100 px-lg-4 z-0 position-relative"
-              >
-                <h1
-                  class="ff_gilroy_bold fw-bold text_4xl text-white lh_55 text-center mb-0"
+        <!-- Hero-section -->
+        <section
+          id="hero"
+          class="flex-grow-1 d-flex hero_sec align-items-center justify-content-center position-relative mt-5 pb-5"
+        >
+          <img
+            class="position-absolute top-50 left_8 translate-middle-y z_icon_hero"
+            src="./assets/images/svg/z-icon-in-body.svg"
+            alt="icon"
+          />
+          <img
+            class="position-absolute top-50 right_8 translate-middle-y z_icon_hero"
+            src="./assets/images/svg/z-icon-in-body.svg"
+            alt="icon"
+          />
+          <span
+            class="page_shadow position-absolute hero_sec_shadow z-0"
+          ></span>
+          <span class="page_shadow position-absolute end-0 top-0 z-0"></span>
+          <div class="container z-1 position-relative">
+            <div class="row justify-content-center">
+              <div class="col-xl-6 col-lg-8">
+                <div
+                  class="d-flex flex-column justify-content-center align-items-center w-100 px-lg-4 z-0 position-relative"
                 >
-                  An Amazon partner you can actually trust
-                </h1>
-
-                <p
-                  class="ff_gilroy_regular text_xl text-white lh_35 text-center px-lg-4 pt-3 mb-0"
-                >
-                  We are a top Amazon retailer focused on delivering results
-                  aligned with your brand's vision.
-                </p>
-                <span class="mt-4 pt-1">
-                  <button class="hero_btn ff_gilroy_medium">
-                    Work With Us
-                  </button></span
-                >
-                <div class="my-5 position-relative">
-                  <img
-                    class="position-absolute z_icon_img translate-middle"
-                    src="./assets/images/svg/z-icon.svg"
-                    alt="img"
-                  />
-                  <img
-                    class="w-100"
-                    src="./assets/images/webp/hero-round-img.webp"
-                    alt="img"
-                  />
-                  <div
-                    class="hero_counter_bg position-absolute translate-middle w_80 w_xsm_100 start-50"
+                  <h1
+                    class="ff_gilroy_bold fw-bold text_4xl text-white lh_55 text-center mb-0"
                   >
-                    <div class="text-center z-2 position-relative">
-                      <div class="row justify-content-center">
-                        <div class="col-sm-4 col-3">
-                          <div class="d-flex flex-column align-items-center">
-                            <i class="fa fa-user invisible"></i>
-                            <h2
-                              class="ff_gilroy_medium text_2xl text-white mb-0"
-                              data-max="0.01"
-                            >
-                              %
-                            </h2>
-                            <h2
-                              class="ff_gilroy_regular text_base text-white mt-0 pt-2"
-                            >
-                              Top Amazon Seller
-                            </h2>
+                    An Amazon partner you can actually trust
+                  </h1>
+
+                  <p
+                    class="ff_gilroy_regular text_xl text-white lh_35 text-center px-lg-4 pt-3 mb-0"
+                  >
+                    We are a top Amazon retailer focused on delivering results
+                    aligned with your brand's vision.
+                  </p>
+                  <span class="mt-4 pt-xl-1">
+                    <button class="hero_btn ff_gilroy_medium">
+                      Work With Us
+                    </button></span
+                  >
+                  <div class="my-md-5 my-4 position-relative">
+                    <img
+                      class="position-absolute z_icon_img translate-middle"
+                      src="./assets/images/svg/z-icon.svg"
+                      alt="img"
+                    />
+                    <img
+                      class="w-100"
+                      src="./assets/images/webp/hero-round-img.webp"
+                      alt="img"
+                    />
+                    <div
+                      class="hero_counter_bg position-absolute translate-middle w_80 w_xsm_100 start-50"
+                    >
+                      <div class="text-center z-2 position-relative">
+                        <div class="row justify-content-center">
+                          <div class="col-sm-4 col-3">
+                            <div class="d-flex flex-column align-items-center">
+                              <i class="fa fa-user invisible"></i>
+                              <h2
+                                class="ff_gilroy_medium text_2xl text-white mb-0"
+                                data-max="0.01"
+                              >
+                                %
+                              </h2>
+                              <h2
+                                class="ff_gilroy_regular text_base text-white mt-0 pt-2"
+                              >
+                                Top Amazon Seller
+                              </h2>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-sm-4 col-3">
-                          <div class="d-flex flex-column align-items-center">
-                            <i class="fa fa-code invisible"></i>
-                            <h2
-                              class="ff_gilroy_medium text_2xl text-white mb-0"
-                              data-max="1000"
-                            >
-                              +
-                            </h2>
-                            <h2
-                              class="ff_gilroy_regular text_base text-white mt-0 pt-2"
-                            >
-                              Unique SKUs
-                            </h2>
+                          <div class="col-sm-4 col-3">
+                            <div class="d-flex flex-column align-items-center">
+                              <i class="fa fa-code invisible"></i>
+                              <h2
+                                class="ff_gilroy_medium text_2xl text-white mb-0"
+                                data-max="1000"
+                              >
+                                +
+                              </h2>
+                              <h2
+                                class="ff_gilroy_regular text_base text-white mt-0 pt-2"
+                              >
+                                Unique SKUs
+                              </h2>
+                            </div>
                           </div>
-                        </div>
-                        <div class="col-sm-4 col-3">
-                          <div class="d-flex flex-column align-items-center">
-                            <i class="fa fa-lock invisible"></i>
-                            <h2
-                              class="ff_gilroy_medium text_2xl text-white mb-0"
-                              data-max="500"
-                            >
-                              +
-                            </h2>
-                            <h2
-                              class="ff_gilroy_regular text_base text-white mt-0 pt-2"
-                            >
-                              Satisfied Customers
-                            </h2>
+                          <div class="col-sm-4 col-3">
+                            <div class="d-flex flex-column align-items-center">
+                              <i class="fa fa-lock invisible"></i>
+                              <h2
+                                class="ff_gilroy_medium text_2xl text-white mb-0"
+                                data-max="500"
+                              >
+                                +
+                              </h2>
+                              <h2
+                                class="ff_gilroy_regular text_base text-white mt-0 pt-2"
+                              >
+                                Satisfied Customers
+                              </h2>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -261,337 +267,479 @@
               </div>
             </div>
           </div>
+        </section>
+        <div
+          class="hero_bottom_layer position-absolute bottom_custom w-100 d-flex justify-content-center align-items-center z-0"
+        >
+          <a href="#Partners">
+            <svg
+              width="54"
+              height="53"
+              viewBox="0 0 54 53"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g opacity="0.7">
+                <path
+                  d="M33.833 33.6938L27.8267 39.7003V11.7972C27.8267 11.3424 27.4579 10.9736 27.0031 10.9736C26.5482 10.9736 26.1795 11.3424 26.1795 11.7972V39.7003L20.173 33.6939C19.8539 33.3857 19.3479 33.3857 19.0287 33.6939C18.7016 34.0099 18.6926 34.5313 19.0085 34.8584L26.4201 42.27C26.4957 42.3457 26.5857 42.4064 26.6859 42.4482C26.7854 42.4897 26.8931 42.5122 27.0031 42.512C27.0206 42.512 27.0362 42.5031 27.0534 42.502C27.1454 42.4963 27.2367 42.483 27.3206 42.4479C27.4211 42.4059 27.5115 42.3449 27.5872 42.2688L34.9975 34.8584C35.3058 34.5392 35.3058 34.0333 34.9975 33.7141C34.6815 33.3869 34.1601 33.3779 33.833 33.6938Z"
+                  fill="#02A9F7"
+                />
+                <rect
+                  x="1.49219"
+                  y="1.23535"
+                  width="51.0146"
+                  height="51.0146"
+                  rx="25.5073"
+                  stroke="#02A9F7"
+                  stroke-width="1.5"
+                />
+              </g>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- Leading-Brands -->
+      <section class="py-5 my-md-5 mt-4">
+        <div class="container">
+          <div
+            class="d-flex justify-content-center flex-column align-items-center"
+          >
+            <p
+              class="ff_gilroy_medium d-inline-block text_md text-white lh_25 mb-0 after_line before_line position-relative text-center"
+            >
+              Trusted By Leading Brands
+            </p>
+
+            <div class="overflow-hidden d-flex align-items-center gap-5">
+              <div class="moving_animation">
+                <div class="d-flex gap-5 width_custom py-4 mt-5">
+                  <span
+                    ><img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/insta.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/bruder.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/solution.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/heater.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/milwokee.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/smart.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/posture.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/can-c.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/wellgenis.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/genpro.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/itac.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/aramith.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/permobil.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/icorsoft.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/camber.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/oasis.svg"
+                      alt="img"
+                  /></span>
+                  <span>
+                    <img
+                      class="cursor_pointer"
+                      src="./assets/images/svg/cracshot.svg"
+                      alt="img"
+                  /></span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
-      <div
-        class="hero_bottom_layer position-absolute bottom-0 w-100 d-flex justify-content-center align-items-end z-0"
-      >
-        <svg
-          id="Partners"
-          width="54"
-          height="53"
-          viewBox="0 0 54 53"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g opacity="0.7">
-            <path
-              d="M33.833 33.6938L27.8267 39.7003V11.7972C27.8267 11.3424 27.4579 10.9736 27.0031 10.9736C26.5482 10.9736 26.1795 11.3424 26.1795 11.7972V39.7003L20.173 33.6939C19.8539 33.3857 19.3479 33.3857 19.0287 33.6939C18.7016 34.0099 18.6926 34.5313 19.0085 34.8584L26.4201 42.27C26.4957 42.3457 26.5857 42.4064 26.6859 42.4482C26.7854 42.4897 26.8931 42.5122 27.0031 42.512C27.0206 42.512 27.0362 42.5031 27.0534 42.502C27.1454 42.4963 27.2367 42.483 27.3206 42.4479C27.4211 42.4059 27.5115 42.3449 27.5872 42.2688L34.9975 34.8584C35.3058 34.5392 35.3058 34.0333 34.9975 33.7141C34.6815 33.3869 34.1601 33.3779 33.833 33.6938Z"
-              fill="#02A9F7"
-            />
-            <rect
-              x="1.49219"
-              y="1.23535"
-              width="51.0146"
-              height="51.0146"
-              rx="25.5073"
-              stroke="#02A9F7"
-              stroke-width="1.5"
-            />
-          </g>
-        </svg>
-      </div>
-    </div>
-    <!-- Leading-Brands -->
-    <section class="py-5 my-5">
-      <div class="container">
-        <div
-          class="d-flex justify-content-center flex-column align-items-center"
-        >
-          <p
-            class="ff_gilroy_medium d-inline-block text_md text-white lh_25 mb-0 after_line before_line position-relative text-center"
-          >
-            Trusted By Leading Brands
-          </p>
-
-          <div class="overflow-hidden d-flex align-items-center gap-5">
-            <div class="moving_animation">
-              <div class="d-flex gap-5 width_custom py-4 mt-5">
-                <span
-                  ><img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/insta.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/bruder.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/solution.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/heater.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/milwokee.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/smart.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/posture.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/can-c.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/wellgenis.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/genpro.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/itac.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/aramith.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/permobil.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/icorsoft.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/camber.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/oasis.svg"
-                    alt="img"
-                /></span>
-                <span>
-                  <img
-                    class="cursor_pointer"
-                    src="./assets/images/svg/cracshot.svg"
-                    alt="img"
-                /></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Message to future partners -->
-    <section id="Partners" class="my-5 py-5">
-      <div class="container">
-        <div class="row justify-content-end position-relative">
-          <img
-            class="frame_img_size"
-            src="./assets/images/webp/frame-partners.webp"
-            alt=""
-          />
+      <!-- Message to future partners -->
+      <section id="Partners" class="my-md-5 my-4 py-sm-5">
+        <div class="container">
           <div
-            class="row position-absolute top-0 start-0 justify-content-end object-fit-cover"
+            class="row partner_bg_clr mx-2 justify-content-end position-relative"
           >
-            <div class="col-11 px-5 py-5 my-5">
-              <!-- future partners first article -->
+            <img
+              class="frame_img_size d-md-flex d-none"
+              src="./assets/images/webp/frame-partners.webp"
+              alt=""
+            />
+            <div class="row top-0 start-0 justify-content-end content_position">
+              <div class="col-md-11 px-sm-5 px-4 py-sm-5 pt-5 my-md-5 my-4">
+                <!-- future partners first article -->
 
-              <h2 class="ff_gilroy_bold text_3xxl text-white text-center mb-4">
-                Message to Future Partners
-              </h2>
-              <h3 class="ff_gilroy_bold text_2xl text-white pt-5">
-                What could the right
-                <span class="text_secondary"> Amazon partner</span>
-                <span class="d-lg-block">do for your brand?</span>
-              </h3>
-              <p class="ff_gilroy_regular text_2xl text-white ps-3">
-                When it comes to Amazon sellers, brands like yours are wary, and
-                for good reason.
-                <span class="d-lg-block ff_gilroy_bold"
-                  >It’s hard to find someone you can trust.</span
+                <h2
+                  class="ff_gilroy_bold text_3xxl text-white text-center mb-lg-4"
                 >
-              </p>
-              <ul class="d-flex flex-column gap-2 p-0">
-                <div class="d-flex gap-3 ps-3">
-                  <span class="mt-3"></span>
-                  <li class="ff_gilroy_medium text_2xl text-white">
-                    Trust to actually add value to your brand by positioning it
-                    the right way, so that you can gain market share…
-                  </li>
-                </div>
-                <div class="d-flex gap-3 ps-3 py-1">
-                  <span class="mt-3"></span>
-                  <li class="ff_gilroy_medium text_2xl text-white">
-                    Trust to work within your reseller policies and respect your
-                    MAP instead of driving the price to the ground…
-                  </li>
-                </div>
-                <div class="d-flex gap-3 ps-3">
-                  <span class="mt-3"></span>
-                  <li class="ff_gilroy_medium text_2xl text-white pb-4">
-                    Trust to represent your brand properly with customers,
-                    instead of getting them angry (with you!)…
-                  </li>
-                </div>
-              </ul>
-              <div class="my-5 w-100 d-flex justify-content-center">
-                <img src="./assets/images/svg/dased-line.svg" alt="line" />
-              </div>
-              <!-- future partners second article -->
-              <h3 class="ff_gilroy_bold text-white text_2xl mb-0 pt-4">
-                So you are very careful. And you should be.
-              </h3>
-              <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
-                In fact, if you are like most brands we talk to, you are
-                struggling to find the right path to distribute your product on
-                Amazon — because the cost of trusting the wrong partner can be
-                huge.
-              </p>
-              <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                But Amazon matters, for any brand, and not just in terms of
-                online sales.
-              </p>
-              <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                More often than not, online is where your brand makes its first
-                impression with new customers. In 2023, you cannot ignore it —
-                and getting things wrong can be an expensive mistake.
-              </p>
-              <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                Succeeding online is hard. But with the right partner, the
-                benefits for your brand can be enormous, both
-                <span class="ff_gilroy_bold pb-4"
-                  >online and in brick-and-mortar.</span
-                >
-              </p>
-
-              <div class="my-5 doted_line w-25 mx-auto"></div>
-              <!-- future partners second article -->
-              <div>
-                <h3 class="ff_gilroy_bold text-white text_2xl mb-0 pt-4">
-                  At Zoplenti, we believe we are that partner.
-                </h3>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
-                  But words, we know, are cheap.
-                </p>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                  Do we respect your MAP and brand guidelines? Yes. Do we
-                  leverage our 7 years of experience in online retail to grow
-                  your brand and increase your market share? Of course.
-                </p>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                  <span class="ff_gilroy_bold"
-                    >We do all those things, and more.</span
-                  >
-                  But everybody can say that (and unfortunately, they do!).
-                </p>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                  In a space filled with big proclamations, we like to keep it
-                  simple.  We purchase your products, go the extra mile to
-                  market them the way your brand deserves, and sell them to our
-                  customers. Plain and simple.
-                </p>
-              </div>
-              <div class="my-5 doted_line w-25 mx-auto py-4"></div>
-              <!-- future partners second article -->
-              <div>
-                <h3 class="ff_gilroy_bold text-white text_2xl mb-0">
-                  Our vision is to set the benchmark for what a great retail
-                  partner should be.
-                </h3>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
-                  That’s why we only reach out to brands if we see a
-                  <span class="ff_gilroy_bold">strong opportunity</span> based
-                  on our customer data and market conditions — we select based
-                  on the possible upside for both partners. If we form a
-                  partnership, it’s because we are
-                  <span class="ff_gilroy_bold">fully committed</span> to doing
-                  the hard work, doing it right, and bringing results.
-                </p>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                  At our core, we are a family-run business,
-                  <span class="ff_gilroy_bold"
-                    >inspired by generations of retail</span
-                  >
-                  experience. We strive to do right by our customers, our
-                  partner brands, and our team. Why? Because we think that’s the
-                  only way to build something that
-                  <span class="ff_gilroy_bold">lasts long-term.</span>
-                </p>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                  If that’s what you look for in a retail partner, I hope you’ll
-                  take the time to read more
-                  <span
-                    style="background: #003f5d; padding: 0 2px"
-                    class="cursor_pointer common_btn shadow-none"
-                    >about us</span
-                  >
-                  and
-                  <span
-                    style="background: #003f5d; padding: 0 2px"
-                    class="cursor_pointer common_btn shadow-none"
-                    >how we work</span
-                  >.
-                </p>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-1">
-                  We’re all looking forward to working with you.
-                </p>
-              </div>
-              <div class="my-5 pt-5">
-                <img src="./assets/images/svg/sign.svg" alt="img" />
-                <h2 class="ff_gilroy_semiBold text_base text-white mb-0">
-                  Steven Hollander
+                  Message to Future Partners
                 </h2>
+                <h3 class="ff_gilroy_bold text_2xl text-white pt-sm-5">
+                  What could the right
+                  <span class="text_secondary"> Amazon partner</span>
+                  <span class="d-lg-block">do for your brand?</span>
+                </h3>
+                <p class="ff_gilroy_regular text_2xl text-white ps-3">
+                  When it comes to Amazon sellers, brands like yours are wary,
+                  and for good reason.
+                  <span class="d-lg-block ff_gilroy_bold"
+                    >It’s hard to find someone you can trust.</span
+                  >
+                </p>
+                <ul class="d-flex flex-column gap-2 p-0">
+                  <div class="d-flex gap-3 ps-3">
+                    <span class="mt-3"></span>
+                    <li class="ff_gilroy_medium text_2xl text-white">
+                      Trust to actually add value to your brand by positioning
+                      it the right way, so that you can gain market share…
+                    </li>
+                  </div>
+                  <div class="d-flex gap-3 ps-3 py-lg-1">
+                    <span class="mt-3"></span>
+                    <li class="ff_gilroy_medium text_2xl text-white">
+                      Trust to work within your reseller policies and respect
+                      your MAP instead of driving the price to the ground…
+                    </li>
+                  </div>
+                  <div class="d-flex gap-3 ps-3">
+                    <span class="mt-3"></span>
+                    <li class="ff_gilroy_medium text_2xl text-white">
+                      Trust to represent your brand properly with customers,
+                      instead of getting them angry (with you!)…
+                    </li>
+                  </div>
+                </ul>
+                <div class="my-md-5 my-4 w-100 d-flex justify-content-center">
+                  <img
+                    class="w-50"
+                    src="./assets/images/svg/dased-line.svg"
+                    alt="line"
+                  />
+                </div>
+                <!-- future partners second article -->
+                <h3 class="ff_gilroy_bold text-white text_2xl mb-0 pt-xl-4">
+                  So you are very careful. And you should be.
+                </h3>
+                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
+                  In fact, if you are like most brands we talk to, you are
+                  struggling to find the right path to distribute your product
+                  on Amazon — because the cost of trusting the wrong partner can
+                  be huge.
+                </p>
+                <p
+                  class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                >
+                  But Amazon matters, for any brand, and not just in terms of
+                  online sales.
+                </p>
+                <p
+                  class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                >
+                  More often than not, online is where your brand makes its
+                  first impression with new customers. In 2023, you cannot
+                  ignore it — and getting things wrong can be an expensive
+                  mistake.
+                </p>
+                <p
+                  class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                >
+                  Succeeding online is hard. But with the right partner, the
+                  benefits for your brand can be enormous, both
+                  <span class="ff_gilroy_bold pb-4"
+                    >online and in brick-and-mortar.</span
+                  >
+                </p>
 
-                <p class="ff_gilroy_regular text_base text-white pt-2">
-                  Founder & CEO
-                </p>
-                <p class="ff_gilroy_medium text_2xl text-white my-5">
-                  Your products & brand + our custom strategy =
-                  <span class="d-sm-block">everyone's success</span>
-                </p>
+                <div class="my-md-5 my-4 doted_line w-25 mx-auto"></div>
+                <!-- future partners second article -->
+                <div>
+                  <h3 class="ff_gilroy_bold text-white text_2xl mb-0 pt-xl-4">
+                    At Zoplenti, we believe we are that partner.
+                  </h3>
+                  <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
+                    But words, we know, are cheap.
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                  >
+                    Do we respect your MAP and brand guidelines? Yes. Do we
+                    leverage our 7 years of experience in online retail to grow
+                    your brand and increase your market share? Of course.
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                  >
+                    <span class="ff_gilroy_bold"
+                      >We do all those things, and more.</span
+                    >
+                    But everybody can say that (and unfortunately, they do!).
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1 pb-4"
+                  >
+                    In a space filled with big proclamations, we like to keep it
+                    simple.  We purchase your products, go the extra mile to
+                    market them the way your brand deserves, and sell them to
+                    our customers. Plain and simple.
+                  </p>
+                </div>
+                <div class="my-md-5 my-4 doted_line w-25 mx-auto"></div>
+                <!-- future partners second article -->
+                <div class="pt-xl-1">
+                  <h3 class="ff_gilroy_bold text-white text_2xl mb-0">
+                    Our vision is to set the benchmark for what a great retail
+                    partner should be.
+                  </h3>
+                  <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
+                    That’s why we only reach out to brands if we see a
+                    <span class="ff_gilroy_bold">strong opportunity</span> based
+                    on our customer data and market conditions — we select based
+                    on the possible upside for both partners. If we form a
+                    partnership, it’s because we are
+                    <span class="ff_gilroy_bold">fully committed</span> to doing
+                    the hard work, doing it right, and bringing results.
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                  >
+                    At our core, we are a family-run business,
+                    <span class="ff_gilroy_bold"
+                      >inspired by generations of retail</span
+                    >
+                    experience. We strive to do right by our customers, our
+                    partner brands, and our team. Why? Because we think that’s
+                    the only way to build something that
+                    <span class="ff_gilroy_bold">lasts long-term.</span>
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                  >
+                    If that’s what you look for in a retail partner, I hope
+                    you’ll take the time to read more
+                    <button
+                      style="background: #003f5d; padding: 0 2px"
+                      class="cursor_pointer common_btn shadow-none"
+                    >
+                      about us
+                    </button>
+                    and
+                    <button
+                      style="background: #003f5d; padding: 0 2px"
+                      class="cursor_pointer common_btn shadow-none"
+                    >
+                      how we work</button
+                    >.
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                  >
+                    We’re all looking forward to working with you.
+                  </p>
+                </div>
+                <div class="my-md-5 my-4 pt-sm-5">
+                  <img
+                    class="partner_sign"
+                    src="./assets/images/svg/sign.svg"
+                    alt="img"
+                  />
+                  <h2 class="ff_gilroy_semiBold text_base text-white mb-0">
+                    Steven Hollander
+                  </h2>
+
+                  <p class="ff_gilroy_regular text_base text-white pt-2 mb-0">
+                    Founder & CEO
+                  </p>
+                  <p class="ff_gilroy_medium text_2xl text-white pt-sm-5 pt-4">
+                    Your products & brand + our custom strategy =
+                    <span class="d-sm-block">everyone's success</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <!-- Amazon-Discover-Brand -->
+      <section class="">
+        <div class="container position-relative">
+          <img
+            class="position-absolute top-50 translate-middle-y amazon_z_icon1"
+            src="./assets/images/svg/amazon-z-icon.svg"
+            alt="img"
+          />
+          <img
+            class="position-absolute top-50 translate-middle-y amazon_z_icon2"
+            src="./assets/images/svg/amazon-z-icon.svg"
+            alt="img"
+          />
+          <div class="row justify-content-center pt-5">
+            <div class="col-md-10">
+              <div
+                class="row px-md-5 pt-5 amazon_cards_parent align-items-center"
+              >
+                <div class="col-lg-6 pe-lg-4">
+                  <div
+                    class="amazon_card_bg px-4 me-lg-4 py-lg-5 py-4 position-relative"
+                  >
+                    <span
+                      class="page_shadow position-absolute top-100 start-100 translate-middle"
+                    ></span>
+                    <h3
+                      class="ff_gilroy_semiBold text_2xxl lh_49 text-white px-md-4 mt-0"
+                    >
+                      Amazon is critical for your brand, even if it’s only a
+                      small part of your sales.
+                    </h3>
+                    <span class="mt-4 pt-xl-1 px-md-4">
+                      <button class="hero_btn bg-transparent ff_gilroy_medium">
+                        Discover Why
+                      </button>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div
+                    class="amazon_card_bg px-4 py-lg-5 py-4 ms-lg-4 mt-5 mt-lg-0 position-relative"
+                  >
+                    <span
+                      class="page_shadow position-absolute top-100 end-100 translate-middle"
+                    ></span>
+                    <h3
+                      class="ff_gilroy_semiBold text_2xxl lh_49 text-white px-md-4 mt-0"
+                    >
+                      Amazon is critical for your brand, even if it’s only a
+                      small part of your sales.
+                    </h3>
+                    <span class="mt-4 pt-xl-1 px-md-4">
+                      <button class="hero_btn bg-transparent ff_gilroy_medium">
+                        Discover Why
+                      </button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Footer -->
-    <!-- <section class="py-4">
+      <!-- FAQ -->
+
+      <section class="py-5 my-5">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-10">
+              <h2 class="ff_gilroy_bold text_3xxl text-center text-white">
+                Frequently Asked <span class="text_secondary">Questions</span>
+              </h2>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button
+                      class="accordion-button ff_gilroy_medium text_md text-center"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                      aria-expanded="true"
+                      aria-controls="collapseOne"
+                    >
+                      Are you an agency?
+                    </button>
+                  </h2>
+                  <div
+                    id="collapseOne"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong>
+                      It is shown by default, until the collapse plugin adds the
+                      appropriate classes that we use to style each element.
+                      These classes control the overall appearance, as well as
+                      the showing and hiding via CSS transitions. You can modify
+                      any of this with custom CSS or overriding our default
+                      variables. It's also worth noting that just about any HTML
+                      can go within the <code>.accordion-body</code>, though the
+                      transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <!-- <section class="py-4">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -690,7 +838,7 @@
         </div>
       </div>
     </section> -->
-
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>

@@ -189,11 +189,14 @@ h1 {
 .left_8 {
   right: -8%;
 }
+.bottom_custom {
+  bottom: -5%;
+}
 .w_80 {
   width: 80% !important;
 }
 .width_custom {
-  width: 1240px;
+  width: 1440px;
 }
 
 .moving_animation {
@@ -235,11 +238,6 @@ h1 {
 }
 /* message to our future partner */
 
-.partner_bg_clr {
-  background: #002334;
-  border-radius: 5px;
-}
-
 ul div span::before {
   position: relative;
   content: "•";
@@ -252,7 +250,90 @@ ul div span::before {
 .frame_img_size {
   height: 2495px;
 }
+.content_position {
+  position: absolute;
+}
+/* Amazon-Discover-Brand */
+.amazon_cards_parent {
+  height: 550px;
+  background: #020202;
+}
+.amazon_card_bg {
+  border: 1.09px solid #02a9f75c;
+  border-radius: 5px;
+}
+.amazon_z_icon1 {
+  left: -8%;
+  width: 395px;
+  z-index: -1;
+}
+.amazon_z_icon2 {
+  right: -8%;
+  width: 395px;
+  z-index: -1;
+}
 
+/* Faq */
+
+#FAQ .accordion-button {
+  padding: 0px 8px !important;
+  color: #a6a6a6 !important;
+  background-color: transparent !important;
+
+  overflow: hidden !important;
+}
+
+#FAQ .accordion-button:not(.collapsed) {
+  padding: 0 8px !important;
+  color: white !important;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: 1px;
+  background-color: transparent !important;
+}
+.shadow_pos {
+  top: 20px;
+  left: -60px;
+}
+.rocket_pos {
+  bottom: -20%;
+  right: -20%;
+}
+
+.accordion {
+  --bs-accordion-bg: transparent !important;
+  --bs-accordion-border-color: transparent !important;
+  --bs-accordion-border-width: 0px !important;
+  --bs-accordion-btn-padding-y: 0rem !important;
+  --bs-accordion-border-radius: 12px !important;
+  --bs-accordion-inner-border-radius: 12px !important;
+  --bs-accordion-btn-icon: url(./assets/img/svg/down-arrow.svg);
+  --bs-accordion-btn-icon-transform: rotate(360deg);
+  --bs-accordion-btn-icon-transition: transform 0.3s ease-in-out;
+  --bs-accordion-btn-active-icon: url(./assets/img/svg/up-arrow.svg);
+  --bs-accordion-btn-focus-border-color: transparent !important;
+  --bs-accordion-btn-focus-box-shadow: transparent !important;
+  --bs-accordion-active-color: transparent !important;
+  --bs-accordion-active-bg: transparent !important;
+}
+
+.Accordion_items:nth-child(1) {
+  border: 0px solid #232323 !important;
+  padding: 0 0 16px 0px !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.21) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21) !important;
+}
+.Accordion_items {
+  border: 0px solid #232323 !important;
+  padding: 0 0 16px 0px !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.21) !important;
+}
+.accordion-body {
+  padding: 0 8px !important;
+  margin-top: -10px !important;
+}
+#FAQ .accordion h2:focus {
+  -webkit-text-stroke: 1.5px white !important;
+}
 @media (max-width: 1920px) {
   .min_vh_100 {
     min-height: 100vh;
@@ -286,6 +367,16 @@ ul div span::before {
     background: #000;
   }
 }
+@media (max-width: 767.99px) {
+  .content_position {
+    all: unset;
+  }
+  .partner_bg_clr {
+    background: #002334;
+    border-radius: 6px;
+    border: 1px solid #02a9f799;
+  }
+}
 @media (max-width: 575.99px) {
   .z_icon_img {
     top: 20%;
@@ -296,6 +387,9 @@ ul div span::before {
     width: 90px;
   }
   .w_xsm_100 {
-    width: 100%;
+    width: 100% !important;
+  }
+  .partner_sign {
+    width: 150px;
   }
 }

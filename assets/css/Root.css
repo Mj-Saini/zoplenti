@@ -176,7 +176,7 @@
     --text-md: 20px;
     --text-xl: 22px;
     --text-2xl: 24px;
-    --text-2xxl: 27.48px;
+    --text-2xxl: 22.48px;
     --text-3xl: 34px;
     --text-3xxl: 38px;
     --text-4xl: 48px;
@@ -185,7 +185,7 @@
     --lh-25: 25px;
     --lh-28: 28px;
     --lh-35: 35px;
-    --lh-49: 49px;
+    --lh-49: 35px;
     --lh-55: 55px;
   }
 }
@@ -197,7 +197,7 @@
     --text-sm: 18px;
     --text-md: 20px;
     --text-xl: 22px;
-    --text-2xl: 24px;
+    --text-2xl: 21px;
     --text-2xxl: 27.48px;
     --text-3xl: 34px;
     --text-3xxl: 38px;
@@ -219,7 +219,7 @@
     --text-sm: 18px;
     --text-md: 20px;
     --text-xl: 22px;
-    --text-2xl: 24px;
+    --text-2xl: 19px;
     --text-2xxl: 27.48px;
     --text-3xl: 34px;
     --text-3xxl: 38px;
@@ -237,21 +237,21 @@
   :root {
     /* font-size */
     --text-xsm: 14px;
-    --text-base: 16px;
+    --text-base: 14px;
     --text-sm: 18px;
     --text-md: 20px;
     --text-xl: 16px;
-    --text-2xl: 24px;
-    --text-2xxl: 27.48px;
+    --text-2xl: 15px;
+    --text-2xxl: 20.48px;
     --text-3xl: 34px;
-    --text-3xxl: 38px;
+    --text-3xxl: 28px;
     --text-4xl: 28px;
     --text-5xl: 54px;
     /* lh */
     --lh-25: 25px;
     --lh-28: 28px;
     --lh-35: 25px;
-    --lh-49: 49px;
+    --lh-49: 35px;
     --lh-55: 40px;
   }
 }
