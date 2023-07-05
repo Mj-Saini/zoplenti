@@ -114,7 +114,7 @@ button.common_btn:hover svg path {
   --bs-btn-color: #ffffffbc !important;
   --bs-btn-bg: transparent !important;
   --bs-btn-border-color: none !important;
-  --bs-btn-hover-color: white !important;
+  --bs-btn-hover-color: transparent !important;
   --bs-btn-hover-bg: transparent !important;
   --bs-btn-focus-shadow-rgb: transparent !important;
   --bs-btn-active-bg: transparent !important;
@@ -126,6 +126,7 @@ button.common_btn:hover svg path {
   color: #ffffff !important;
   background: transparent !important;
   padding: 8px 16px !important;
+  outline: none !important;
 }
 .dropdown-item:hover {
   color: #ffffff !important;
@@ -137,6 +138,19 @@ button.common_btn:hover svg path {
   background-color: #022333 !important;
   border: 1px solid #02a9f7 !important;
   box-shadow: 0px 0px 11px 0px #02a9f754 !important;
+}
+.btn:hover {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  outline: none !important;
 }
 
 /* hero-section */
@@ -297,6 +311,21 @@ ul div span::before {
   height: 100%;
   min-height: 1px;
 }
+#slider svg:hover path {
+  fill: #ffffff;
+  opacity: 1;
+  z-index: 1;
+  position: relative;
+}
+#slider svg:hover rect {
+  fill: #02a9f7;
+  z-index: 0 !important;
+  position: relative;
+  stroke: none;
+}
+.matrix_rotate {
+  transform: rotate(180deg) !important;
+}
 
 /* Faq */
 .accordion {
@@ -308,10 +337,10 @@ ul div span::before {
   --bs-accordion-btn-icon-width: 22px !important;
 }
 .accordion-button:not(.collapsed) {
-  background-color: black !important;
+  background-color: transparent !important;
 }
 .accordion {
-  --bs-accordion-bg: black !important;
+  --bs-accordion-bg: transparent !important;
   --bs-accordion-border-color: #016594 !important;
 }
 .accordion-item {
@@ -319,11 +348,13 @@ ul div span::before {
   border-bottom: 1px solid #0c63e4;
 }
 .accordion-button {
+  background-color: transparent !important;
   border-bottom: 1px solid #0c62e46c !important;
   font-size: var(--text-md) !important;
   font-weight: 500 !important;
 }
 .accordion-button::after {
+  background-color: transparent !important;
   background-image: url(../images/svg/plus-icon.svg) !important;
   width: 22px;
 }

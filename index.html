@@ -63,7 +63,7 @@
       >
         <!-- Header section -->
 
-        <navbar id="header" class="position-relative z-1">
+        <navbar id="header" class="position-relative">
           <div class="container pt-4 mt-1">
             <div class="d-flex justify-content-between align-items-center">
               <span
@@ -77,6 +77,7 @@
                   alt=""
                 />Zoplenti</span
               >
+
               <ul
                 id="OpenNav"
                 class="d-flex list-unstyled gap-2 gap-xl-3 flex-column flex-lg-row justify-content-center align-items-center ps-0 mb-0"
@@ -123,7 +124,10 @@
                         />
                       </svg>
                     </button>
-                    <ul class="dropdown-menu px-0">
+                    <ul
+                      style="z-index: 123; position: relative"
+                      class="dropdown-menu px-0"
+                    >
                       <li><a class="dropdown-item" href="#">Action</a></li>
                       <li>
                         <a class="dropdown-item" href="#">Another action</a>
@@ -151,6 +155,7 @@
                   >
                 </li>
               </ul>
+
               <button class="common_btn d-lg-flex d-none ff_gilroy_medium">
                 <svg
                   width="22"
@@ -449,7 +454,33 @@
         </div>
       </section>
       <!-- Message to future partners -->
-      <section id="Partners" class="my-lg-5 my-4 py-sm-5">
+      <section id="Partners" class="my-lg-5 my-4 py-sm-5 position-relative">
+        <span class="footer_shadow position-absolute top-0 start-0"></span>
+        <span
+          style="top: 70%"
+          class="footer_shadow position-absolute start-0"
+        ></span>
+        <span
+          style="top: 50%"
+          class="page_shadow1 position-absolute end-0"
+        ></span>
+        <img
+          class="position-absolute top-50 left_8 translate-middle-y z_icon_hero"
+          src="./assets/images/svg/z-icon-in-body.svg"
+          alt="icon"
+        />
+        <img
+          style="top: 5%"
+          class="position-absolute right_8 translate-middle-y z_icon_hero"
+          src="./assets/images/svg/z-icon-in-body.svg"
+          alt="icon"
+        />
+        <img
+          style="top: 75%"
+          class="position-absolute right_8 translate-middle-y z_icon_hero"
+          src="./assets/images/svg/z-icon-in-body.svg"
+          alt="icon"
+        />
         <div class="container my-lg-5 py-lg-5">
           <div
             class="row partner_bg_clr mx-2 justify-content-end position-relative"
@@ -721,7 +752,7 @@
               >
                 <div class="col-lg-6 pe-lg-4">
                   <div
-                    class="amazon_card_bg px-4 me-lg-4 py-lg-5 py-4 position-relative"
+                    class="amazon_card_bg px-4 me-lg-4 py-lg-5 py-4 position-relative text-center text-sm-start"
                   >
                     <span
                       class="page_shadow1 position-absolute end-0 amazon_shadow translate-middle-y z-0"
@@ -743,7 +774,7 @@
                 </div>
                 <div class="col-lg-6 mt-5 mt-md-0">
                   <div
-                    class="amazon_card_bg px-4 py-lg-5 py-4 ms-lg-4 mt-sm-5 mt-lg-0 position-relative"
+                    class="amazon_card_bg px-4 py-lg-5 py-4 ms-lg-4 mt-sm-5 mt-lg-0 position-relative text-center text-sm-start"
                   >
                     <span
                       class="page_shadow1 position-absolute amazon_shadow1 translate-middle z-0"
@@ -769,7 +800,27 @@
         </div>
       </section>
       <!-- slider -->
-      <section id="slider" class="my-sm-5 py-sm-5">
+      <section id="slider" class="my-sm-5 py-sm-5 position-relative">
+        <span
+          style="top: 70%"
+          class="footer_shadow position-absolute start-0"
+        ></span>
+        <span
+          style="top: 60%"
+          class="page_shadow1 position-absolute end-0"
+        ></span>
+        <img
+          style="top: 75%"
+          class="position-absolute left_8 translate-middle-y z_icon_hero"
+          src="./assets/images/svg/z-icon-in-body.svg"
+          alt="icon"
+        />
+        <img
+          style="top: 95%"
+          class="position-absolute right_8 translate-middle-y z_icon_hero"
+          src="./assets/images/svg/z-icon-in-body.svg"
+          alt="icon"
+        />
         <div class="container">
           <div class="responsive mx-auto">
             <div class="row">
@@ -783,27 +834,18 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                    x="-0.5"
-                    y="0.5"
+                    x="0.734375"
+                    y="0.50390625"
                     width="40"
                     height="40"
-                    rx="20"
-                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                    fill="white"
-                    fill-opacity="0.1"
+                    rx="20.5"
+                    fill="transparent"
+                    stroke="white"
                   />
                   <path
-                    d="M24.8594 26.6289C25.0885 26.3997 25.2031 26.1081 25.2031 25.7539C25.2031 25.3997 25.0885 25.1081 24.8594 24.8789L19.9844 20.0039L24.8594 15.1289C25.0885 14.8997 25.2031 14.6081 25.2031 14.2539C25.2031 13.8997 25.0885 13.6081 24.8594 13.3789C24.6302 13.1497 24.3385 13.0352 23.9844 13.0352C23.6302 13.0352 23.3385 13.1497 23.1094 13.3789L17.3594 19.1289C17.2344 19.2539 17.1456 19.3893 17.0931 19.5352C17.0406 19.681 17.0148 19.8372 17.0156 20.0039C17.0156 20.1706 17.0419 20.3268 17.0944 20.4727C17.1469 20.6185 17.2352 20.7539 17.3594 20.8789L23.1094 26.6289C23.3385 26.8581 23.6302 26.9727 23.9844 26.9727C24.3385 26.9727 24.6302 26.8581 24.8594 26.6289Z"
-                    fill="white"
-                  />
-                  <rect
-                    x="-0.5"
-                    y="0.5"
-                    width="40"
-                    height="40"
-                    rx="20"
                     transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                    stroke="white"
+                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
+                    fill="#02A9F7"
                   />
                 </svg>
                 <svg
@@ -816,15 +858,16 @@
                 >
                   <rect
                     x="0.734375"
-                    y="0.00390625"
-                    width="41"
-                    height="41"
+                    y="0.50390625"
+                    width="40"
+                    height="40"
                     rx="20.5"
-                    fill="#02A9F7"
+                    fill="transparent"
+                    stroke="white"
                   />
                   <path
                     d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
-                    fill="white"
+                    fill="#02A9F7"
                   />
                 </svg>
                 <div class="row justify-content-center">
@@ -879,27 +922,18 @@
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <rect
-                    x="-0.5"
-                    y="0.5"
+                    x="0.734375"
+                    y="0.50390625"
                     width="40"
                     height="40"
-                    rx="20"
-                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                    fill="white"
-                    fill-opacity="0.1"
+                    rx="20.5"
+                    fill="transparent"
+                    stroke="white"
                   />
                   <path
-                    d="M24.8594 26.6289C25.0885 26.3997 25.2031 26.1081 25.2031 25.7539C25.2031 25.3997 25.0885 25.1081 24.8594 24.8789L19.9844 20.0039L24.8594 15.1289C25.0885 14.8997 25.2031 14.6081 25.2031 14.2539C25.2031 13.8997 25.0885 13.6081 24.8594 13.3789C24.6302 13.1497 24.3385 13.0352 23.9844 13.0352C23.6302 13.0352 23.3385 13.1497 23.1094 13.3789L17.3594 19.1289C17.2344 19.2539 17.1456 19.3893 17.0931 19.5352C17.0406 19.681 17.0148 19.8372 17.0156 20.0039C17.0156 20.1706 17.0419 20.3268 17.0944 20.4727C17.1469 20.6185 17.2352 20.7539 17.3594 20.8789L23.1094 26.6289C23.3385 26.8581 23.6302 26.9727 23.9844 26.9727C24.3385 26.9727 24.6302 26.8581 24.8594 26.6289Z"
-                    fill="white"
-                  />
-                  <rect
-                    x="-0.5"
-                    y="0.5"
-                    width="40"
-                    height="40"
-                    rx="20"
                     transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                    stroke="white"
+                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
+                    fill="#02A9F7"
                   />
                 </svg>
                 <svg
@@ -912,15 +946,16 @@
                 >
                   <rect
                     x="0.734375"
-                    y="0.00390625"
-                    width="41"
-                    height="41"
+                    y="0.50390625"
+                    width="40"
+                    height="40"
                     rx="20.5"
-                    fill="#02A9F7"
+                    fill="transparent"
+                    stroke="white"
                   />
                   <path
                     d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
-                    fill="white"
+                    fill="#02A9F7"
                   />
                 </svg>
                 <div class="row justify-content-center">
@@ -1444,6 +1479,15 @@
         style="background: #000c24"
         class="position-relative pt-5 mt-md-5"
       >
+        <span
+          style="bottom: 0%"
+          class="page_shadow1 position-absolute end-0"
+        ></span>
+        <img
+          class="position-absolute bottom-0 start-0"
+          src="./assets/images/svg/footer-z.svg"
+          alt="icon"
+        />
         <span class="footer_shadow position-absolute"></span>
         <span
           class="footer_shadow position-absolute end-0 top-100 translate-middle-y"
@@ -1451,7 +1495,7 @@
         <div class="container my-sm-5">
           <div class="row mb-5">
             <div class="col-lg-4">
-              <div>
+              <div class="text-center text-sm-start">
                 <a
                   href="#header"
                   class="mb-0 logo ff_jost fw-medium text-white text_3xl lh_49 cursor_pointer text-uppercase"
@@ -1467,7 +1511,7 @@
                 </a>
               </div>
             </div>
-            <div class="col-lg-8">
+            <div class="col-lg-8 text-center text-sm-start">
               <div class="row justify-content-between">
                 <div class="col-md-3">
                   <h2 class="ff_gilroy_semiBold text_base text-white lh_25">
@@ -1548,7 +1592,7 @@
         <span class="footer_bottom_line d-inline-block w-100 mt-sm-5"></span>
         <div class="container">
           <div
-            class="d-flex flex-column flex-sm-row z-1 position-relative justify-content-between w-100 py-3 my-1"
+            class="d-flex flex-column flex-sm-row z-1 position-relative justify-content-between text-center text-sm-start w-100 py-3 my-1"
           >
             <p class="ff_montserrat fw-normal text_base text_dark_gray">
               ©2023 Zoplenti. All Rights Reserved.
@@ -1597,6 +1641,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <!-- navBar -->
     <script>
       const OpenNav = document.getElementById("OpenNav");
       function menu() {
@@ -1714,6 +1759,5 @@
         preloader.style.display = "none";
       });
     </script>
-    <!-- svg0btn -->
   </body>
 </html>
