@@ -73,8 +73,10 @@
   --text-light-gray: #c9cccd;
   --text-gray: #b3bac2;
   --text-dark-gray: #9cabaf;
+  --text-light-gray: #cccccc;
   /* bg-color */
   --bg-dark: #000000;
+  --bg-secondary: #02a9f7;
 }
 /* font-size */
 .text_xsm {
@@ -161,18 +163,24 @@
 .text_dark_gray {
   color: var(--text-dark-gray);
 }
+.text_light_gray {
+  color: var(--text-light-gray);
+}
 
 /* bg-color */
 
 .bg_dark {
   background-color: var(--bg-dark);
 }
+.bg_secondary {
+  background-color: var(--bg-secondary);
+}
 @media (max-width: 1200px) {
   :root {
     /* font-size */
     --text-xsm: 14px;
     --text-base: 16px;
-    --text-sm: 18px;
+    --text-sm: 16px;
     --text-md: 20px;
     --text-xl: 22px;
     --text-2xl: 24px;
@@ -220,7 +228,7 @@
     --text-md: 20px;
     --text-xl: 22px;
     --text-2xl: 19px;
-    --text-2xxl: 27.48px;
+    --text-2xxl: 25.48px;
     --text-3xl: 34px;
     --text-3xxl: 38px;
     --text-4xl: 40px;
@@ -239,7 +247,7 @@
     --text-xsm: 14px;
     --text-base: 14px;
     --text-sm: 18px;
-    --text-md: 20px;
+    --text-md: 16px;
     --text-xl: 16px;
     --text-2xl: 15px;
     --text-2xxl: 20.48px;

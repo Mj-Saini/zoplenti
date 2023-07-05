@@ -18,6 +18,27 @@
       crossorigin="anonymous"
     />
 
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- slider link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slick theam min css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- counter_link -->
     <link
       rel="stylesheet"
@@ -31,13 +52,18 @@
     />
   </head>
   <body class="bg-black">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
+    </div>
+    <a id="back_to_top" href="#">↑</a>
     <div class="overflow-hidden">
       <div
         class="min_vh_100 hero_bg_img d-flex flex-column pb-5 position-relative"
       >
         <!-- Header section -->
 
-        <navbar class="position-relative z-1">
+        <navbar id="header" class="position-relative z-1">
           <div class="container pt-4 mt-1">
             <div class="d-flex justify-content-between align-items-center">
               <span
@@ -206,6 +232,7 @@
                       src="./assets/images/webp/hero-round-img.webp"
                       alt="img"
                     />
+                    <!-- Hero-Counter -->
                     <div
                       class="hero_counter_bg position-absolute translate-middle w_80 w_xsm_100 start-50"
                     >
@@ -299,8 +326,8 @@
         </div>
       </div>
       <!-- Leading-Brands -->
-      <section class="py-5 my-md-5 mt-4">
-        <div class="container">
+      <section class="py-5 my-lg-5 mt-4">
+        <div class="container my-5">
           <div
             class="d-flex justify-content-center flex-column align-items-center"
           >
@@ -422,8 +449,8 @@
         </div>
       </section>
       <!-- Message to future partners -->
-      <section id="Partners" class="my-md-5 my-4 py-sm-5">
-        <div class="container">
+      <section id="Partners" class="my-lg-5 my-4 py-sm-5">
+        <div class="container my-lg-5 py-lg-5">
           <div
             class="row partner_bg_clr mx-2 justify-content-end position-relative"
           >
@@ -433,49 +460,57 @@
               alt=""
             />
             <div class="row top-0 start-0 justify-content-end content_position">
-              <div class="col-md-11 px-sm-5 px-4 py-sm-5 pt-5 my-md-5 my-4">
+              <div class="col-md-11 px-sm-5 px-4 py-sm-5 pt-4 my-md-5">
                 <!-- future partners first article -->
 
-                <h2
-                  class="ff_gilroy_bold text_3xxl text-white text-center mb-lg-4"
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-delay="300"
+                  data-aos-offset="0"
                 >
-                  Message to Future Partners
-                </h2>
-                <h3 class="ff_gilroy_bold text_2xl text-white pt-sm-5">
-                  What could the right
-                  <span class="text_secondary"> Amazon partner</span>
-                  <span class="d-lg-block">do for your brand?</span>
-                </h3>
-                <p class="ff_gilroy_regular text_2xl text-white ps-3">
-                  When it comes to Amazon sellers, brands like yours are wary,
-                  and for good reason.
-                  <span class="d-lg-block ff_gilroy_bold"
-                    >It’s hard to find someone you can trust.</span
+                  <h2
+                    class="ff_gilroy_bold text_3xxl text-white text-center mb-lg-4"
                   >
-                </p>
-                <ul class="d-flex flex-column gap-2 p-0">
-                  <div class="d-flex gap-3 ps-3">
-                    <span class="mt-3"></span>
-                    <li class="ff_gilroy_medium text_2xl text-white">
-                      Trust to actually add value to your brand by positioning
-                      it the right way, so that you can gain market share…
-                    </li>
-                  </div>
-                  <div class="d-flex gap-3 ps-3 py-lg-1">
-                    <span class="mt-3"></span>
-                    <li class="ff_gilroy_medium text_2xl text-white">
-                      Trust to work within your reseller policies and respect
-                      your MAP instead of driving the price to the ground…
-                    </li>
-                  </div>
-                  <div class="d-flex gap-3 ps-3">
-                    <span class="mt-3"></span>
-                    <li class="ff_gilroy_medium text_2xl text-white">
-                      Trust to represent your brand properly with customers,
-                      instead of getting them angry (with you!)…
-                    </li>
-                  </div>
-                </ul>
+                    Message to Future Partners
+                  </h2>
+                  <h3 class="ff_gilroy_bold text_2xl text-white pt-sm-5">
+                    What could the right
+                    <span class="text_secondary"> Amazon partner</span>
+                    <span class="d-lg-block">do for your brand?</span>
+                  </h3>
+                  <p class="ff_gilroy_regular text_2xl text-white ps-3">
+                    When it comes to Amazon sellers, brands like yours are wary,
+                    and for good reason.
+                    <span class="d-lg-block ff_gilroy_bold"
+                      >It’s hard to find someone you can trust.</span
+                    >
+                  </p>
+                  <ul class="d-flex flex-column gap-2 p-0">
+                    <div class="d-flex gap-3 ps-3">
+                      <span class="mt-3"></span>
+                      <li class="ff_gilroy_medium text_2xl text-white">
+                        Trust to actually add value to your brand by positioning
+                        it the right way, so that you can gain market share…
+                      </li>
+                    </div>
+                    <div class="d-flex gap-3 ps-3 py-lg-1">
+                      <span class="mt-3"></span>
+                      <li class="ff_gilroy_medium text_2xl text-white">
+                        Trust to work within your reseller policies and respect
+                        your MAP instead of driving the price to the ground…
+                      </li>
+                    </div>
+                    <div class="d-flex gap-3 ps-3">
+                      <span class="mt-3"></span>
+                      <li class="ff_gilroy_medium text_2xl text-white">
+                        Trust to represent your brand properly with customers,
+                        instead of getting them angry (with you!)…
+                      </li>
+                    </div>
+                  </ul>
+                </div>
                 <div class="my-md-5 my-4 w-100 d-flex justify-content-center">
                   <img
                     class="w-50"
@@ -484,42 +519,62 @@
                   />
                 </div>
                 <!-- future partners second article -->
-                <h3 class="ff_gilroy_bold text-white text_2xl mb-0 pt-xl-4">
-                  So you are very careful. And you should be.
-                </h3>
-                <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
-                  In fact, if you are like most brands we talk to, you are
-                  struggling to find the right path to distribute your product
-                  on Amazon — because the cost of trusting the wrong partner can
-                  be huge.
-                </p>
-                <p
-                  class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1200"
+                  data-aos-delay="1000"
+                  data-aos-offset="0"
                 >
-                  But Amazon matters, for any brand, and not just in terms of
-                  online sales.
-                </p>
-                <p
-                  class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
-                >
-                  More often than not, online is where your brand makes its
-                  first impression with new customers. In 2023, you cannot
-                  ignore it — and getting things wrong can be an expensive
-                  mistake.
-                </p>
-                <p
-                  class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
-                >
-                  Succeeding online is hard. But with the right partner, the
-                  benefits for your brand can be enormous, both
-                  <span class="ff_gilroy_bold pb-4"
-                    >online and in brick-and-mortar.</span
+                  <h3 class="ff_gilroy_bold text-white text_2xl mb-0 pt-xl-4">
+                    So you are very careful. And you should be.
+                  </h3>
+                  <p class="ff_gilroy_regular text_2xl text-white mb-0 mt-3">
+                    In fact, if you are like most brands we talk to, you are
+                    struggling to find the right path to distribute your product
+                    on Amazon — because the cost of trusting the wrong partner
+                    can be huge.
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
                   >
-                </p>
+                    But Amazon matters, for any brand, and not just in terms of
+                    online sales.
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                  >
+                    More often than not, online is where your brand makes its
+                    first impression with new customers. In 2023, you cannot
+                    ignore it — and getting things wrong can be an expensive
+                    mistake.
+                  </p>
+                  <p
+                    class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
+                  >
+                    Succeeding online is hard. But with the right partner, the
+                    benefits for your brand can be enormous, both
+                    <span class="ff_gilroy_bold pb-4"
+                      >online and in brick-and-mortar.</span
+                    >
+                  </p>
+                </div>
 
-                <div class="my-md-5 my-4 doted_line w-25 mx-auto"></div>
+                <div class="my-md-5 my-4 w-100 d-flex justify-content-center">
+                  <img
+                    class="w-50"
+                    src="./assets/images/svg/dased-line.svg"
+                    alt="line"
+                  />
+                </div>
                 <!-- future partners second article -->
-                <div>
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1500"
+                  data-aos-delay="1000"
+                  data-aos-offset="0"
+                >
                   <h3 class="ff_gilroy_bold text-white text_2xl mb-0 pt-xl-4">
                     At Zoplenti, we believe we are that partner.
                   </h3>
@@ -550,9 +605,22 @@
                     our customers. Plain and simple.
                   </p>
                 </div>
-                <div class="my-md-5 my-4 doted_line w-25 mx-auto"></div>
+                <div class="my-md-5 my-4 w-100 d-flex justify-content-center">
+                  <img
+                    class="w-50"
+                    src="./assets/images/svg/dased-line.svg"
+                    alt="line"
+                  />
+                </div>
                 <!-- future partners second article -->
-                <div class="pt-xl-1">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1200"
+                  data-aos-delay="1000"
+                  data-aos-offset="0"
+                  class="pt-xl-1"
+                >
                   <h3 class="ff_gilroy_bold text-white text_2xl mb-0">
                     Our vision is to set the benchmark for what a great retail
                     partner should be.
@@ -603,7 +671,14 @@
                     We’re all looking forward to working with you.
                   </p>
                 </div>
-                <div class="my-md-5 my-4 pt-sm-5">
+                <div
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1200"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                  class="my-md-5 my-4 pt-sm-5"
+                >
                   <img
                     class="partner_sign"
                     src="./assets/images/svg/sign.svg"
@@ -642,43 +717,47 @@
           <div class="row justify-content-center pt-5">
             <div class="col-md-10">
               <div
-                class="row px-md-5 pt-5 amazon_cards_parent align-items-center"
+                class="row px-md-5 py-5 amazon_cards_parent align-items-center overflow-hidden"
               >
                 <div class="col-lg-6 pe-lg-4">
                   <div
                     class="amazon_card_bg px-4 me-lg-4 py-lg-5 py-4 position-relative"
                   >
                     <span
-                      class="page_shadow position-absolute top-100 start-100 translate-middle"
+                      class="page_shadow1 position-absolute end-0 amazon_shadow translate-middle-y z-0"
                     ></span>
                     <h3
-                      class="ff_gilroy_semiBold text_2xxl lh_49 text-white px-md-4 mt-0"
+                      class="ff_gilroy_semiBold text_2xxl lh_49 text-white px-md-4 mt-0 z-1 position-relative"
                     >
                       Amazon is critical for your brand, even if it’s only a
                       small part of your sales.
                     </h3>
                     <span class="mt-4 pt-xl-1 px-md-4">
-                      <button class="hero_btn bg-transparent ff_gilroy_medium">
+                      <button
+                        class="hero_btn bg-transparent ff_gilroy_medium z-1 position-relative"
+                      >
                         Discover Why
                       </button>
                     </span>
                   </div>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6 mt-5 mt-md-0">
                   <div
-                    class="amazon_card_bg px-4 py-lg-5 py-4 ms-lg-4 mt-5 mt-lg-0 position-relative"
+                    class="amazon_card_bg px-4 py-lg-5 py-4 ms-lg-4 mt-sm-5 mt-lg-0 position-relative"
                   >
                     <span
-                      class="page_shadow position-absolute top-100 end-100 translate-middle"
+                      class="page_shadow1 position-absolute amazon_shadow1 translate-middle z-0"
                     ></span>
                     <h3
-                      class="ff_gilroy_semiBold text_2xxl lh_49 text-white px-md-4 mt-0"
+                      class="ff_gilroy_semiBold text_2xxl lh_49 text-white px-md-4 mt-0 z-1 position-relative"
                     >
-                      Amazon is critical for your brand, even if it’s only a
-                      small part of your sales.
+                      Discover the simple 3 step process we use to create
+                      winning partnerships.
                     </h3>
                     <span class="mt-4 pt-xl-1 px-md-4">
-                      <button class="hero_btn bg-transparent ff_gilroy_medium">
+                      <button
+                        class="hero_btn bg_secondary ff_gilroy_medium z-1 position-relative"
+                      >
                         Discover Why
                       </button>
                     </span>
@@ -689,46 +768,667 @@
           </div>
         </div>
       </section>
-
-      <!-- FAQ -->
-
-      <section class="py-5 my-5">
+      <!-- slider -->
+      <section id="slider" class="my-sm-5 py-sm-5">
         <div class="container">
+          <div class="responsive mx-auto">
+            <div class="row">
+              <div class="col-lg-10 position-relative">
+                <svg
+                  class="position-absolute top-50 start-0 ms-4 d-none d-md-flex translate-middle-y prev-btn cursor_pointer z-2"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="-0.5"
+                    y="0.5"
+                    width="40"
+                    height="40"
+                    rx="20"
+                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+                    fill="white"
+                    fill-opacity="0.1"
+                  />
+                  <path
+                    d="M24.8594 26.6289C25.0885 26.3997 25.2031 26.1081 25.2031 25.7539C25.2031 25.3997 25.0885 25.1081 24.8594 24.8789L19.9844 20.0039L24.8594 15.1289C25.0885 14.8997 25.2031 14.6081 25.2031 14.2539C25.2031 13.8997 25.0885 13.6081 24.8594 13.3789C24.6302 13.1497 24.3385 13.0352 23.9844 13.0352C23.6302 13.0352 23.3385 13.1497 23.1094 13.3789L17.3594 19.1289C17.2344 19.2539 17.1456 19.3893 17.0931 19.5352C17.0406 19.681 17.0148 19.8372 17.0156 20.0039C17.0156 20.1706 17.0419 20.3268 17.0944 20.4727C17.1469 20.6185 17.2352 20.7539 17.3594 20.8789L23.1094 26.6289C23.3385 26.8581 23.6302 26.9727 23.9844 26.9727C24.3385 26.9727 24.6302 26.8581 24.8594 26.6289Z"
+                    fill="white"
+                  />
+                  <rect
+                    x="-0.5"
+                    y="0.5"
+                    width="40"
+                    height="40"
+                    rx="20"
+                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+                    stroke="white"
+                  />
+                </svg>
+                <svg
+                  class="position-absolute top-50 end-0 me-4 d-none d-md-flex translate-middle-y next-btn cursor_pointer"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.734375"
+                    y="0.00390625"
+                    width="41"
+                    height="41"
+                    rx="20.5"
+                    fill="#02A9F7"
+                  />
+                  <path
+                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="row justify-content-center">
+                  <div class="col-11">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center py-5"
+                    >
+                      <img
+                        class="mb-2"
+                        src="./assets/images/svg/sting.svg"
+                        alt="icon"
+                      />
+                      <p
+                        class="ff_gilroy_regular text_2xl text_light_gray text-center mb-0"
+                      >
+                        Magna augue maecenas aliquet sit. Libero risus feugiat
+                        lacus
+                        <span class="d-xl-block">
+                          vestibulum habitant proin. Nec eu in a elementum
+                          molestie consectetur</span
+                        >
+                        <span class="d-xl-block">
+                          massa pharetra. Lorem non id at sed sed leo nulla
+                          pharetra. Gravida</span
+                        >
+                        erat viverra pellentesque eget imperdiet.
+                      </p>
+                      <p
+                        class="ff_gilroy_medium text_2xl text-white text-center mb-0 mt-4"
+                      >
+                        Elsa Weimann
+                      </p>
+                      <p
+                        style="color: #cccccc"
+                        class="ff_gilroy_regular text_sm text-center mt-2"
+                      >
+                        Manager, CEO
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-10 position-relative">
+                <svg
+                  class="position-absolute top-50 start-0 ms-4 d-none d-md-flex translate-middle-y prev-btn cursor_pointer z-2"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="-0.5"
+                    y="0.5"
+                    width="40"
+                    height="40"
+                    rx="20"
+                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+                    fill="white"
+                    fill-opacity="0.1"
+                  />
+                  <path
+                    d="M24.8594 26.6289C25.0885 26.3997 25.2031 26.1081 25.2031 25.7539C25.2031 25.3997 25.0885 25.1081 24.8594 24.8789L19.9844 20.0039L24.8594 15.1289C25.0885 14.8997 25.2031 14.6081 25.2031 14.2539C25.2031 13.8997 25.0885 13.6081 24.8594 13.3789C24.6302 13.1497 24.3385 13.0352 23.9844 13.0352C23.6302 13.0352 23.3385 13.1497 23.1094 13.3789L17.3594 19.1289C17.2344 19.2539 17.1456 19.3893 17.0931 19.5352C17.0406 19.681 17.0148 19.8372 17.0156 20.0039C17.0156 20.1706 17.0419 20.3268 17.0944 20.4727C17.1469 20.6185 17.2352 20.7539 17.3594 20.8789L23.1094 26.6289C23.3385 26.8581 23.6302 26.9727 23.9844 26.9727C24.3385 26.9727 24.6302 26.8581 24.8594 26.6289Z"
+                    fill="white"
+                  />
+                  <rect
+                    x="-0.5"
+                    y="0.5"
+                    width="40"
+                    height="40"
+                    rx="20"
+                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+                    stroke="white"
+                  />
+                </svg>
+                <svg
+                  class="position-absolute top-50 end-0 me-4 d-none d-md-flex translate-middle-y next-btn cursor_pointer"
+                  width="42"
+                  height="42"
+                  viewBox="0 0 42 42"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="0.734375"
+                    y="0.00390625"
+                    width="41"
+                    height="41"
+                    rx="20.5"
+                    fill="#02A9F7"
+                  />
+                  <path
+                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
+                    fill="white"
+                  />
+                </svg>
+                <div class="row justify-content-center">
+                  <div class="col-11">
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center py-5"
+                    >
+                      <img
+                        class="mb-2"
+                        src="./assets/images/svg/sting.svg"
+                        alt="icon"
+                      />
+                      <p
+                        class="ff_gilroy_regular text_2xl text_light_gray text-center mb-0"
+                      >
+                        Magna augue maecenas aliquet sit. Libero risus feugiat
+                        lacus
+                        <span class="d-xl-block">
+                          vestibulum habitant proin. Nec eu in a elementum
+                          molestie consectetur</span
+                        >
+                        <span class="d-xl-block">
+                          massa pharetra. Lorem non id at sed sed leo nulla
+                          pharetra. Gravida</span
+                        >
+                        erat viverra pellentesque eget imperdiet.
+                      </p>
+                      <p
+                        class="ff_gilroy_medium text_2xl text-white text-center mb-0 mt-4"
+                      >
+                        Elsa Weimann
+                      </p>
+                      <p
+                        style="color: #cccccc"
+                        class="ff_gilroy_regular text_sm text-center mt-2"
+                      >
+                        Manager, CEO
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ -->
+      <section class="bg-black pb-5">
+        <div class="container mb-lg-5 pb-md-5">
           <div class="row justify-content-center">
-            <div class="col-md-10">
-              <h2 class="ff_gilroy_bold text_3xxl text-center text-white">
-                Frequently Asked <span class="text_secondary">Questions</span>
-              </h2>
-              <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="headingOne">
+            <div class="col-sm-10">
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="500"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                >
+                  <h2 class="accordion-header">
                     <button
-                      class="accordion-button ff_gilroy_medium text_md text-center"
+                      class="accordion-button ff_gilroy_medium collapsed"
                       type="button"
                       data-bs-toggle="collapse"
-                      data-bs-target="#collapseOne"
-                      aria-expanded="true"
-                      aria-controls="collapseOne"
+                      data-bs-target="#flush-collapseOne"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseOne"
                     >
                       Are you an agency?
                     </button>
                   </h2>
                   <div
-                    id="collapseOne"
-                    class="accordion-collapse collapse show"
-                    aria-labelledby="headingOne"
-                    data-bs-parent="#accordionExample"
+                    id="flush-collapseOne"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
                   >
-                    <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong>
-                      It is shown by default, until the collapse plugin adds the
-                      appropriate classes that we use to style each element.
-                      These classes control the overall appearance, as well as
-                      the showing and hiding via CSS transitions. You can modify
-                      any of this with custom CSS or overriding our default
-                      variables. It's also worth noting that just about any HTML
-                      can go within the <code>.accordion-body</code>, though the
-                      transition does limit overflow.
+                    <div class="accordion-body ff_gilroy_regular">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the first item's accordion body.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="600"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button ff_gilroy_medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseTwo"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseTwo"
+                    >
+                      Do you carry stock on consignment, or do dropshipping?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body ff_gilroy_regular">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the second item's accordion body. Let's imagine
+                      this being filled with some actual content.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="700"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button ff_gilroy_medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseThree"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseThree"
+                    >
+                      Why is it better to partner with 3rd party sellers than
+                      sell directly to Amazon?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body ff_gilroy_regular">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="800"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button ff_gilroy_medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsefour"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsefour"
+                    >
+                      Why should I work with partners rather than sell directly
+                      on Amazon?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapsefour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body ff_gilroy_regular">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="900"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button ff_gilroy_medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsefive"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsefive"
+                    >
+                      Will you make it easy to communicate with you should the
+                      need arise?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapsefive"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body ff_gilroy_regular">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button ff_gilroy_medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapsesix"
+                      aria-expanded="false"
+                      aria-controls="flush-collapsesix"
+                    >
+                      What do you do to improve brand perception online?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapsesix"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body ff_gilroy_regular">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="accordion-item"
+                  data-aos="fade-up"
+                  data-aos-easing="linear"
+                  data-aos-duration="1100"
+                  data-aos-delay="500"
+                  data-aos-offset="0"
+                >
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button ff_gilroy_medium collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#flush-collapseseven"
+                      aria-expanded="false"
+                      aria-controls="flush-collapseseven"
+                    >
+                      How do you approach customer questions and ordering
+                      issues?
+                    </button>
+                  </h2>
+                  <div
+                    id="flush-collapseseven"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#accordionFlushExample"
+                  >
+                    <div class="accordion-body ff_gilroy_regular">
+                      Placeholder content for this accordion, which is intended
+                      to demonstrate the <code>.accordion-flush</code> class.
+                      This is the third item's accordion body. Nothing more
+                      exciting happening here in terms of content, but just
+                      filling up the space to make it look, at least at first
+                      glance, a bit more representative of how this would look
+                      in a real-world application.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Counter-as-section -->
+
+      <section class="py-5 my-md-5 position-relative">
+        <img
+          class="position-absolute end-0 top-50 translate-middle-y mt-sm-5"
+          src="./assets/images/svg/rigth-i-coin.svg"
+          alt="icon"
+        />
+        <span
+          class="page_shadow position-absolute start-50 translate-middle-x hero_sec_shadow z-0"
+        ></span>
+        <span
+          class="page_shadow position-absolute start-100 pe-5 translate-middle-x hero_sec_shadow z-0"
+        ></span>
+        <div class="container py-sm-5">
+          <div class="row justify-content-center top_bottom_line my-sm-5">
+            <div class="col-lg-10">
+              <div class="text-center z-2 position-relative my-sm-5">
+                <div class="row justify-content-between">
+                  <div class="col-xl-4 col-lg-3">
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fa fa-user invisible"></i>
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="1.12112"
+                          y="0.503906"
+                          width="62"
+                          height="62"
+                          rx="31"
+                          fill="#02A9F7"
+                          fill-opacity="0.1"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M42.1015 12.7946C40.8462 13.2196 39.6871 13.6215 39.5257 13.6877C39.2803 13.7883 39.3418 13.9047 39.8999 14.3973L40.5677 14.9867L38.9745 17.2075C38.0984 18.4289 37.0499 19.879 36.6445 20.4299L35.9073 21.4313L31.5817 20.1977C29.2026 19.5191 27.2402 18.9877 27.2208 19.0168C27.1703 19.0921 23.5409 24.2005 20.6523 28.2619C19.3012 30.1614 18.1768 31.7871 18.1534 31.8748C18.1301 31.9625 18.6298 32.441 19.2638 32.9383L20.4165 33.8423L24.3969 28.2492C26.5861 25.1731 28.3952 22.6328 28.417 22.6041C28.451 22.5596 36.2468 24.7573 36.8732 24.9879C37.0008 25.0347 38.2744 23.4102 39.9641 21.0453C41.5449 18.833 42.9015 17.0194 42.9786 17.0151C43.0557 17.011 43.3832 17.2181 43.7065 17.4755C44.144 17.8241 44.313 17.8813 44.3681 17.6996C44.5148 17.216 44.6552 11.9866 44.5211 12.0039C44.4456 12.0138 43.3567 12.3694 42.1015 12.7946ZM43.69 20.9975C43.6449 21.1208 43.628 27.0319 43.6524 34.1333L43.6969 47.045L45.5428 47.0959L47.3888 47.1468V33.9601V20.7733H45.5804C44.2919 20.7733 43.7484 20.8377 43.69 20.9975ZM35.4102 36.9577L35.4545 47.045L37.3004 47.0959L39.1464 47.1468V37.0087V26.8705H37.2561H35.3657L35.4102 36.9577ZM27.1672 39.3787L27.212 47.045L29.058 47.0959L30.904 47.1468V39.4296V31.7124H29.0132H27.1226L27.1672 39.3787ZM18.9243 41.5306L18.9696 47.045L20.8156 47.0959L22.6615 47.1468V41.5815V36.0163H20.7702H18.8788L18.9243 41.5306ZM15.6211 48.8383V50.0039H32.6211H49.6211V48.8383V47.6726H32.6211H15.6211V48.8383Z"
+                          fill="#02A9F7"
+                        />
+                        <rect
+                          x="1.12112"
+                          y="0.503906"
+                          width="62"
+                          height="62"
+                          rx="31"
+                          stroke="#02A9F7"
+                        />
+                      </svg>
+
+                      <h2
+                        class="ff_gilroy_medium text_2xl text-white mb-0"
+                        data-max="50"
+                      >
+                        +
+                      </h2>
+                      <h2
+                        class="ff_gilroy_regular text_md text_light_gray mt-0 pt-2 px-xl-5"
+                      >
+                        Market leading partners
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-5 mt-lg-0 between_border">
+                    <div class="d-flex flex-column align-items-center">
+                      <i class="fa fa-code invisible"></i>
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="0.621094"
+                          y="0.503906"
+                          width="62"
+                          height="62"
+                          rx="31"
+                          fill="#02A9F7"
+                          fill-opacity="0.1"
+                        />
+                        <g filter="url(#filter0_d_1_1004)">
+                          <path
+                            d="M52.0782 30.8363C51.9363 30.3111 51.4463 29.9524 50.9046 29.9524H40.6008L45.5141 16.6288C45.7463 16.0011 45.4239 15.3093 44.792 15.0787C44.16 14.8481 43.4637 15.1684 43.2315 15.7961L37.7121 30.7467C37.5702 31.1182 37.6347 31.5281 37.8539 31.8484C38.0861 32.1687 38.46 32.3608 38.8469 32.3608H46.5974L29.2652 42.9556L38.589 16.6032C38.6019 16.5648 38.6148 16.5264 38.6148 16.5007C38.6148 16.4879 38.6148 16.4751 38.6277 16.4623C38.6277 16.4367 38.6406 16.4111 38.6406 16.3854C38.6406 16.3726 38.6406 16.3598 38.6406 16.347C38.6406 16.3214 38.6406 16.2958 38.6406 16.2829C38.6406 16.2701 38.6406 16.2573 38.6406 16.2445C38.6406 16.2061 38.6406 16.1805 38.6406 16.142C38.6406 16.1292 38.6406 16.1164 38.6406 16.1036C38.6406 16.078 38.6406 16.0652 38.6277 16.0395C38.6277 16.0267 38.6277 16.0139 38.6148 16.0011C38.6148 15.9755 38.6019 15.9627 38.6019 15.937C38.6019 15.9242 38.6019 15.9114 38.589 15.8986C38.5761 15.873 38.5761 15.8474 38.5632 15.8217V15.8089C38.5503 15.7705 38.5374 15.7449 38.5245 15.7064C38.5245 15.6936 38.5116 15.6936 38.5116 15.6808C38.4987 15.6552 38.4858 15.6424 38.4729 15.6168C38.4729 15.604 38.46 15.5911 38.4471 15.5911C38.4343 15.5655 38.4214 15.5527 38.4085 15.5271C38.3956 15.5143 38.3956 15.5015 38.3827 15.5015C38.3698 15.4758 38.344 15.463 38.3311 15.4374C38.3182 15.4246 38.3182 15.4118 38.3053 15.4118C38.2795 15.3862 38.2666 15.3734 38.2408 15.3477C38.2279 15.3349 38.215 15.3221 38.2021 15.3093C38.1892 15.2965 38.1892 15.2965 38.1763 15.2837C38.1763 15.2837 38.1763 15.2837 38.1634 15.2837C38.1119 15.2453 38.0732 15.2196 38.0216 15.1812C38.0087 15.1812 38.0087 15.1684 37.9958 15.1684C37.9571 15.1428 37.9055 15.13 37.8668 15.1043C37.8539 15.1043 37.841 15.0915 37.8281 15.0915C37.8281 15.0915 37.8152 15.0915 37.8152 15.0787C37.7637 15.0659 37.725 15.0531 37.6734 15.0403C37.6605 15.0403 37.6476 15.0403 37.6476 15.0403C37.596 15.0275 37.5444 15.0275 37.5057 15.0147C37.4928 15.0147 37.4928 15.0147 37.48 15.0147C37.4284 15.0147 37.3639 15.0147 37.3123 15.0147C37.2994 15.0147 37.2994 15.0147 37.2865 15.0147C37.2349 15.0147 37.1833 15.0275 37.1318 15.0403H37.1189C37.0673 15.0531 37.0157 15.0659 36.9641 15.0915C36.9512 15.0915 36.9383 15.1043 36.9254 15.1043C36.8738 15.13 36.8223 15.1556 36.7836 15.1812L12.694 30.1445C12.2297 30.4264 12.0234 30.9901 12.1652 31.5025C12.32 32.0149 12.7971 32.3737 13.3388 32.3737H23.346L18.6648 45.3769C18.4327 46.0046 18.768 46.6964 19.3999 46.927C19.5417 46.9783 19.6707 47.0039 19.8125 47.0039C20.3155 47.0039 20.7797 46.6964 20.9603 46.1968L26.2347 31.5794C26.3637 31.2079 26.3121 30.7979 26.0799 30.4776C25.8478 30.1573 25.4867 29.9652 25.087 29.9652H17.5944L35.1587 19.0758L25.8478 45.3897C25.8349 45.4281 25.822 45.4666 25.822 45.4922C25.822 45.505 25.822 45.5178 25.8091 45.5306C25.8091 45.5563 25.7962 45.5819 25.7962 45.6075C25.7962 45.6203 25.7962 45.6331 25.7962 45.6459C25.7962 45.6716 25.7962 45.6972 25.7962 45.7228C25.7962 45.7356 25.7962 45.7484 25.7962 45.7612C25.7962 45.7997 25.7962 45.8253 25.7962 45.8637C25.7962 45.8765 25.7962 45.8893 25.7962 45.9022C25.7962 45.9278 25.7962 45.9406 25.8091 45.9662C25.8091 45.979 25.8091 45.9918 25.822 46.0046C25.822 46.0303 25.8349 46.0431 25.8349 46.0687C25.8349 46.0815 25.8349 46.0943 25.8478 46.1071C25.8607 46.1328 25.8607 46.1712 25.8736 46.1968V46.2096C25.8865 46.2481 25.8994 46.2737 25.9123 46.3121C25.9123 46.3249 25.9252 46.3249 25.9252 46.3377C25.9381 46.3634 25.951 46.389 25.9639 46.4018C25.9639 46.4146 25.9768 46.4274 25.9768 46.4274C25.9897 46.453 26.0026 46.4658 26.0155 46.4915C26.0284 46.5043 26.0284 46.5043 26.0413 46.5171C26.0542 46.5427 26.0799 46.5683 26.0928 46.5811C26.1057 46.594 26.1057 46.6068 26.1186 46.6068C26.1315 46.6196 26.1573 46.6452 26.1702 46.658C26.1831 46.6708 26.196 46.6836 26.2089 46.6964C26.2218 46.7093 26.2218 46.7093 26.2347 46.7221C26.2347 46.7221 26.2476 46.7221 26.2476 46.7349C26.2992 46.7733 26.3379 46.7989 26.3894 46.8374C26.4023 46.8374 26.4023 46.8502 26.4152 46.8502C26.4539 46.8758 26.5055 46.8886 26.5442 46.9142C26.5571 46.9142 26.57 46.927 26.5829 46.927C26.5958 46.927 26.5958 46.927 26.6087 46.9398C26.6474 46.9527 26.699 46.9655 26.7376 46.9783C26.7505 46.9783 26.7505 46.9783 26.7634 46.9783C26.815 46.9911 26.8666 46.9911 26.9311 47.0039H26.944C26.9698 47.0039 26.9827 47.0039 27.0085 47.0039C27.0471 47.0039 27.0729 47.0039 27.1116 47.0039C27.1116 47.0039 27.1116 47.0039 27.1245 47.0039C27.1761 47.0039 27.2406 46.9911 27.2922 46.9783H27.3051C27.3566 46.9655 27.4211 46.9527 27.4727 46.927C27.4727 46.927 27.4856 46.927 27.4856 46.9142C27.5372 46.8886 27.5888 46.863 27.6404 46.8374L51.5623 32.2199C52.0008 31.9125 52.22 31.3616 52.0782 30.8363Z"
+                            fill="#02A9F7"
+                          />
+                        </g>
+                        <rect
+                          x="0.621094"
+                          y="0.503906"
+                          width="62"
+                          height="62"
+                          rx="31"
+                          stroke="#02A9F7"
+                        />
+                        <defs>
+                          <filter
+                            id="filter0_d_1_1004"
+                            x="9.29022"
+                            y="13.2024"
+                            width="45.6617"
+                            height="37.6617"
+                            filterUnits="userSpaceOnUse"
+                            color-interpolation-filters="sRGB"
+                          >
+                            <feFlood
+                              flood-opacity="0"
+                              result="BackgroundImageFix"
+                            />
+                            <feColorMatrix
+                              in="SourceAlpha"
+                              type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              result="hardAlpha"
+                            />
+                            <feOffset dy="1.02941" />
+                            <feGaussianBlur stdDeviation="1.41544" />
+                            <feComposite in2="hardAlpha" operator="out" />
+                            <feColorMatrix
+                              type="matrix"
+                              values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in2="BackgroundImageFix"
+                              result="effect1_dropShadow_1_1004"
+                            />
+                            <feBlend
+                              mode="normal"
+                              in="SourceGraphic"
+                              in2="effect1_dropShadow_1_1004"
+                              result="shape"
+                            />
+                          </filter>
+                        </defs>
+                      </svg>
+
+                      <h2
+                        class="ff_gilroy_medium text_2xl text-white mb-0"
+                        data-max="100"
+                      >
+                        %
+                      </h2>
+                      <h2
+                        class="ff_gilroy_regular text_md text_light_gray mt-0 pt-2 px-lg-5"
+                      >
+                        Positive customer feedback
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mt-5 mt-lg-0">
+                    <div class="d-flex flex-column align-items-center px-xl-5">
+                      <i class="fa fa-lock invisible"></i>
+                      <svg
+                        width="64"
+                        height="64"
+                        viewBox="0 0 64 64"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <rect
+                          x="0.621094"
+                          y="0.503906"
+                          width="62"
+                          height="62"
+                          rx="31"
+                          fill="#02A9F7"
+                          fill-opacity="0.1"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M16.6348 21.2054V22.4069L17.295 22.4311L17.9552 22.4554L17.9776 25.2185L18.0001 27.9816H17.3174H16.6348V29.1035V30.2254H20.298H23.9612V29.1035V27.9816H23.2796H22.5981V25.1977V22.4138H23.2796H23.9612V21.2089V20.0039H20.298H16.6348V21.2054ZM24.3871 23.5357V24.6576H24.8983H25.4094V26.3196V27.9816H24.8983H24.3871V29.1035V30.2254H27.2836H30.1801V29.1035V27.9816H29.6263H29.0726V26.8564C29.0726 25.6225 29.1887 25.2205 29.6257 24.9412C30.1916 24.5795 31.0951 24.6328 31.4362 25.048C31.6167 25.2678 31.6275 25.3565 31.6279 26.6312L31.6283 27.9816H31.1172H30.606V29.1035V30.2254H33.4173H36.2286L36.229 29.2074L36.2292 28.1894L36.3894 28.4387C36.9693 29.3417 38.1587 30.0523 39.5235 30.311C40.3342 30.4647 42.2646 30.3769 42.9694 30.1541C44.1792 29.7718 45.0222 28.8426 45.2982 27.5869L45.3576 27.3168H43.7856H42.2138L42.1621 27.6319C42.0585 28.2642 41.2934 28.6589 40.5335 28.4723C40.0865 28.3624 39.7728 28.0508 39.64 27.5843C39.5229 27.1731 39.5269 25.7389 39.6464 25.276C39.8773 24.3813 41.1333 24.0245 41.7417 24.6808C41.9392 24.8938 42.1062 25.3339 42.1081 25.6464C42.1107 26.0742 42.1301 26.0774 43.6861 25.9025C44.4808 25.8133 45.1647 25.7397 45.2058 25.7391C45.247 25.7384 45.2562 25.5887 45.2263 25.4063C45.0035 24.0474 44.036 23.0616 42.4901 22.6183C42.1113 22.5097 41.6924 22.4731 40.8715 22.4769C39.9328 22.4814 39.6475 22.5157 38.9992 22.7025C38.0245 22.9832 37.502 23.261 36.9341 23.8004C36.1099 24.5833 35.6954 25.8507 35.885 27.0086C35.9349 27.3129 36.0124 27.6564 36.0574 27.7718C36.1381 27.9787 36.1334 27.9816 35.7153 27.9816H35.2915V26.2932C35.2915 24.1994 35.224 23.916 34.5734 23.2813C33.9815 22.704 33.339 22.4969 32.1395 22.4969C30.8464 22.4969 29.8065 22.9014 29.2155 23.6341C29.1301 23.74 29.0247 23.8266 28.9812 23.8266C28.9377 23.8266 28.9022 23.5087 28.9022 23.1202V22.4138H26.6447H24.3871V23.5357ZM45.626 27.9049C45.3309 28.0893 45.0033 28.6589 45.0033 28.9875C45.0033 29.3279 45.3625 29.9172 45.6775 30.0937C46.0624 30.3093 46.729 30.3035 47.0358 30.0818C47.8517 29.4923 47.8474 28.3858 47.0273 27.8981C46.652 27.6749 45.989 27.6781 45.626 27.9049ZM25.0734 31.3132C24.8652 31.353 24.4121 31.5167 24.0664 31.6768C23.2276 32.0653 22.6234 32.6715 22.1768 33.5728C21.636 34.6636 21.5424 35.1715 21.5375 37.0397C21.5325 38.9643 21.6459 39.5699 22.2222 40.6927C23.0567 42.3188 24.5697 43.113 26.6021 42.9914C27.9289 42.912 28.8115 42.5541 29.5828 41.7824C30.7232 40.6416 31.1794 39.0878 31.0937 36.637C31.0252 34.6783 30.622 33.5177 29.6625 32.5172C29.1021 31.9328 28.2644 31.4725 27.4711 31.3132C26.9475 31.2081 25.623 31.2081 25.0734 31.3132ZM34.9508 31.3496C33.3875 31.772 32.3403 32.8081 31.8451 34.422C31.4524 35.7024 31.3618 37.1642 31.5852 38.6154C31.9417 40.93 33.0571 42.3562 34.9082 42.8645C35.5497 43.0406 37.2557 43.0168 37.8472 42.8236C39.6814 42.2244 40.77 40.7261 41.078 38.3769C41.325 36.4937 41.0025 34.4441 40.2725 33.2586C39.7372 32.389 39.0547 31.8293 38.1152 31.4895C37.3826 31.2245 35.6905 31.1496 34.9508 31.3496ZM44.9847 31.3516C43.8511 31.6197 42.8323 32.3798 42.2994 33.3552C42.1523 33.6245 41.9273 34.1803 41.7995 34.5904C41.5812 35.2911 41.5667 35.4365 41.5601 36.9981C41.553 38.6544 41.5951 39.0106 41.9083 39.9465C42.6008 42.0163 44.3153 43.1246 46.6219 42.9935C48.4678 42.8885 49.6917 42.1205 50.4508 40.5907C51.0077 39.4684 51.1615 38.585 51.1125 36.7904C51.0498 34.4935 50.6 33.2941 49.3906 32.1993C49.0519 31.8925 48.0539 31.4274 47.4909 31.3137C46.8816 31.1907 45.582 31.2104 44.9847 31.3516ZM13.0574 31.368C13.0585 31.4598 12.6419 34.4241 12.4591 35.6255C12.3723 36.1961 12.3083 36.6671 12.317 36.6722C12.6293 36.8585 14.3402 37.7045 14.4048 37.7045C14.4552 37.7045 14.6613 37.5965 14.8628 37.4646C16.4521 36.4237 17.8237 37.0353 17.8237 38.7848C17.8237 39.8986 17.3887 40.4472 16.507 40.4453C15.9626 40.4441 15.6925 40.3097 15.5062 39.947C15.3413 39.6266 15.3056 38.8441 15.44 38.4993C15.4857 38.3821 15.4952 38.2857 15.4613 38.285C15.4273 38.2844 14.6622 38.649 13.761 39.0953C12.168 39.8841 12.1225 39.9138 12.1211 40.1634C12.1203 40.3047 12.2335 40.6427 12.3728 40.9145C13.0809 42.2967 14.7708 43.1049 16.7199 42.9935C19.3587 42.8428 21.1499 41.0906 21.1499 38.6601C21.1499 36.3449 19.8184 35.0492 17.4363 35.0462C16.5747 35.0452 16.0171 35.1762 15.5208 35.4966C15.339 35.614 15.176 35.71 15.1587 35.71C15.1413 35.71 15.1563 35.5137 15.1919 35.2738C15.2275 35.0339 15.2816 34.6599 15.312 34.4428L15.3674 34.048H17.8326H20.298V32.6769V31.3057H16.6774C14.686 31.3057 13.0571 31.3337 13.0574 31.368ZM26.8605 33.7586C27.4321 34.0469 27.5817 34.756 27.579 37.1643C27.5766 39.2988 27.4883 39.8052 27.032 40.3033C26.8098 40.546 26.7404 40.5715 26.3012 40.5715C25.8441 40.5715 25.7994 40.5529 25.5326 40.2518C25.1462 39.8158 25.0664 39.414 25.0103 37.6203C24.9368 35.277 25.145 34.1198 25.6991 33.7902C26.0178 33.6006 26.5202 33.587 26.8605 33.7586ZM36.9828 33.8428C37.1283 33.9622 37.2975 34.2251 37.3747 34.4516C37.7153 35.4519 37.7043 38.9241 37.3577 39.8309C37.1082 40.4836 36.4968 40.7593 35.8675 40.5028C35.2225 40.2399 35.0354 39.4696 35.0374 37.0867C35.0399 34.3292 35.3071 33.6374 36.3711 33.6338C36.6284 33.6328 36.7974 33.6906 36.9828 33.8428ZM46.8729 33.7549C47.4111 34.0263 47.6442 35.0442 47.6442 37.1228C47.6442 39.8282 47.2587 40.7294 46.1628 40.586C45.7107 40.5268 45.3996 40.1939 45.1999 39.5554C44.9763 38.8406 44.9794 35.395 45.2044 34.6749C45.3816 34.1075 45.5183 33.8901 45.7905 33.7426C46.0528 33.6006 46.5789 33.6065 46.8729 33.7549Z"
+                          fill="#02A9F7"
+                        />
+                        <rect
+                          x="0.621094"
+                          y="0.503906"
+                          width="62"
+                          height="62"
+                          rx="31"
+                          stroke="#02A9F7"
+                        />
+                      </svg>
+
+                      <h2
+                        class="ff_gilroy_medium text_2xl text-white mb-0"
+                        data-max="633"
+                      >
+                        +
+                      </h2>
+                      <h2
+                        class="ff_gilroy_regular text_md text_light_gray mt-0 pt-2"
+                      >
+                        Inc 5000 Fastest Growing Private Company
+                      </h2>
                     </div>
                   </div>
                 </div>
@@ -739,106 +1439,162 @@
       </section>
 
       <!-- Footer -->
-      <!-- <section class="py-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
-            <div>
-              <span
-                class="mb-0 logo ff_jost fw-medium text-white text_3xl lh_49 cursor_pointer text-uppercase"
-              >
-                <img
-                  class="pb-2 pe-0"
-                  width="58.26"
-                  height="46"
-                  src="./assets/images//svg/zoplenti-logo.svg"
-                  alt=""
-                />
-                Zoplenti
-              </span>
-            </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="row justify-content-between">
-              <div class="col-4">
-                <h2 class="ff_gilroy_semiBold text_base text-white lh_25">
-                  Headquarters
-                </h2>
-                <span>
-                  <a class="ff_gilroy_regular text_base text_gray" href="#">
-                    401 East Jackson St.
-                    <span class="d-block">Suite 2340</span> Tampa, FL 33602
-                  </a>
-                </span>
+      <section
+        id="footer"
+        style="background: #000c24"
+        class="position-relative pt-5 mt-md-5"
+      >
+        <span class="footer_shadow position-absolute"></span>
+        <span
+          class="footer_shadow position-absolute end-0 top-100 translate-middle-y"
+        ></span>
+        <div class="container my-sm-5">
+          <div class="row mb-5">
+            <div class="col-lg-4">
+              <div>
+                <a
+                  href="#header"
+                  class="mb-0 logo ff_jost fw-medium text-white text_3xl lh_49 cursor_pointer text-uppercase"
+                >
+                  <img
+                    class="pb-2 pe-0"
+                    width="58.26"
+                    height="46"
+                    src="./assets/images//svg/zoplenti-logo.svg"
+                    alt=""
+                  />
+                  Zoplenti
+                </a>
               </div>
-              <div class="col-4">
-                <h2 class="ff_gilroy_semiBold text_sm text-white lh_25">
-                  Have a question?
-                </h2>
-                <div class="d-flex flex-column">
+            </div>
+            <div class="col-lg-8">
+              <div class="row justify-content-between">
+                <div class="col-md-3">
+                  <h2 class="ff_gilroy_semiBold text_base text-white lh_25">
+                    Headquarters
+                  </h2>
                   <span>
-                    <a
-                      class="ff_gilroy_regular text_base text-white lh_25 d-inline-block"
-                      href="mailto:partners@zoplenti.com"
-                    >
-                      <svg
-                        width="17"
-                        height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g opacity="0.7">
-                          <path
-                            d="M14.5078 3.32812H2.50781C2.2426 3.32813 1.98824 3.43348 1.80071 3.62102C1.61317 3.80855 1.50781 4.06291 1.50781 4.32812V12.3281C1.50781 12.5933 1.61317 12.8477 1.80071 13.0352C1.98824 13.2228 2.2426 13.3281 2.50781 13.3281H14.5078C14.773 13.3281 15.0274 13.2228 15.2149 13.0352C15.4025 12.8477 15.5078 12.5933 15.5078 12.3281V4.32812C15.5078 4.06291 15.4025 3.80855 15.2149 3.62102C15.0274 3.43348 14.773 3.32813 14.5078 3.32812ZM13.4078 4.32812L8.50781 7.71812L3.60781 4.32812H13.4078ZM2.50781 12.3281V4.78312L8.22281 8.73812C8.30651 8.79619 8.40595 8.8273 8.50781 8.8273C8.60968 8.8273 8.70911 8.79619 8.79281 8.73812L14.5078 4.78312V12.3281H2.50781Z"
-                            fill="white"
-                          />
-                        </g>
-                      </svg>
-
-                      partners@zoplenti.com
-                    </a>
-                  </span>
-                  <span>
-                    <a
-                      class="ff_gilroy_regular text_base text-white lh_25 d-inline-block"
-                      href="tel:833-838-9101"
-                    >
-                      <svg
-                        width="17"
-                        height="17"
-                        viewBox="0 0 17 17"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <g opacity="0.7">
-                          <path
-                            d="M14.4059 10.3099L11.4616 8.9905L11.4534 8.98675C11.3006 8.92137 11.1338 8.89513 10.9683 8.91041C10.8028 8.92569 10.6436 8.982 10.5053 9.07425C10.489 9.085 10.4734 9.09669 10.4584 9.10925L8.93719 10.4061C7.97344 9.938 6.97844 8.9505 6.51032 7.99925L7.80907 6.45487C7.82157 6.43925 7.83344 6.42362 7.84469 6.40675C7.93496 6.26881 7.98973 6.1107 8.00412 5.94648C8.01852 5.78226 7.99209 5.61703 7.92719 5.4655V5.458L6.60407 2.50862C6.51828 2.31066 6.37077 2.14576 6.18356 2.03852C5.99635 1.93129 5.77948 1.88747 5.56532 1.91362C4.71842 2.02507 3.94106 2.44098 3.3784 3.08368C2.81575 3.72639 2.50629 4.55193 2.50782 5.40612C2.50782 10.3686 6.54532 14.4061 11.5078 14.4061C12.362 14.4077 13.1876 14.0982 13.8303 13.5355C14.473 12.9729 14.8889 12.1955 15.0003 11.3486C15.0265 11.1345 14.9828 10.9177 14.8757 10.7305C14.7686 10.5433 14.6038 10.3958 14.4059 10.3099ZM11.5078 13.4061C9.3868 13.4038 7.35331 12.5602 5.85352 11.0604C4.35373 9.56063 3.51013 7.52714 3.50782 5.40612C3.50547 4.7958 3.72535 4.2055 4.1264 3.74544C4.52746 3.28538 5.08226 2.98704 5.68719 2.90612C5.68695 2.90862 5.68695 2.91113 5.68719 2.91362L6.99969 5.85112L5.70782 7.39737C5.69471 7.41246 5.68279 7.42855 5.67219 7.4455C5.57814 7.58982 5.52296 7.756 5.51201 7.92791C5.50106 8.09983 5.53471 8.27166 5.60969 8.42675C6.17594 9.58487 7.34282 10.743 8.51344 11.3086C8.66967 11.3829 8.8425 11.4154 9.01503 11.4029C9.18757 11.3904 9.35392 11.3334 9.49782 11.2374C9.51386 11.2266 9.52931 11.2149 9.54407 11.2024L11.0634 9.90612L14.0009 11.2217H14.0078C13.9279 11.8275 13.63 12.3835 13.1699 12.7855C12.7097 13.1876 12.1189 13.4082 11.5078 13.4061Z"
-                            fill="white"
-                          />
-                        </g>
-                      </svg>
-
-                      833-838-9101
+                    <a class="ff_gilroy_regular text_base text_gray" href="#">
+                      401 East Jackson St. Suite 2340 Tampa, FL 33602
                     </a>
                   </span>
                 </div>
-              </div>
-              <div class="col-3">
-                <h2 class="ff_gilroy_semiBold text_sm text-white lh_25">
-                  Let's build a win-win partnership.
-                </h2>
+                <div class="col-md-5">
+                  <h2 class="ff_gilroy_semiBold text_sm text-white lh_25">
+                    Have a question?
+                  </h2>
+                  <div class="d-flex flex-column">
+                    <span>
+                      <a
+                        class="ff_gilroy_regular text_base text_gray lh_25 d-inline-block"
+                        href="mailto:partners@zoplenti.com"
+                      >
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.7">
+                            <path
+                              d="M14.5078 3.32812H2.50781C2.2426 3.32813 1.98824 3.43348 1.80071 3.62102C1.61317 3.80855 1.50781 4.06291 1.50781 4.32812V12.3281C1.50781 12.5933 1.61317 12.8477 1.80071 13.0352C1.98824 13.2228 2.2426 13.3281 2.50781 13.3281H14.5078C14.773 13.3281 15.0274 13.2228 15.2149 13.0352C15.4025 12.8477 15.5078 12.5933 15.5078 12.3281V4.32812C15.5078 4.06291 15.4025 3.80855 15.2149 3.62102C15.0274 3.43348 14.773 3.32813 14.5078 3.32812ZM13.4078 4.32812L8.50781 7.71812L3.60781 4.32812H13.4078ZM2.50781 12.3281V4.78312L8.22281 8.73812C8.30651 8.79619 8.40595 8.8273 8.50781 8.8273C8.60968 8.8273 8.70911 8.79619 8.79281 8.73812L14.5078 4.78312V12.3281H2.50781Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>
 
-                <button class="hero_btn d-lg-flex d-none ff_gilroy_medium mt-5">
-                  Work With Us
-                </button>
+                        partners@zoplenti.com
+                      </a>
+                    </span>
+                    <span>
+                      <a
+                        class="ff_gilroy_regular text_base text_gray lh_25 d-inline-block"
+                        href="tel:833-838-9101"
+                      >
+                        <svg
+                          width="17"
+                          height="17"
+                          viewBox="0 0 17 17"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <g opacity="0.7">
+                            <path
+                              d="M14.4059 10.3099L11.4616 8.9905L11.4534 8.98675C11.3006 8.92137 11.1338 8.89513 10.9683 8.91041C10.8028 8.92569 10.6436 8.982 10.5053 9.07425C10.489 9.085 10.4734 9.09669 10.4584 9.10925L8.93719 10.4061C7.97344 9.938 6.97844 8.9505 6.51032 7.99925L7.80907 6.45487C7.82157 6.43925 7.83344 6.42362 7.84469 6.40675C7.93496 6.26881 7.98973 6.1107 8.00412 5.94648C8.01852 5.78226 7.99209 5.61703 7.92719 5.4655V5.458L6.60407 2.50862C6.51828 2.31066 6.37077 2.14576 6.18356 2.03852C5.99635 1.93129 5.77948 1.88747 5.56532 1.91362C4.71842 2.02507 3.94106 2.44098 3.3784 3.08368C2.81575 3.72639 2.50629 4.55193 2.50782 5.40612C2.50782 10.3686 6.54532 14.4061 11.5078 14.4061C12.362 14.4077 13.1876 14.0982 13.8303 13.5355C14.473 12.9729 14.8889 12.1955 15.0003 11.3486C15.0265 11.1345 14.9828 10.9177 14.8757 10.7305C14.7686 10.5433 14.6038 10.3958 14.4059 10.3099ZM11.5078 13.4061C9.3868 13.4038 7.35331 12.5602 5.85352 11.0604C4.35373 9.56063 3.51013 7.52714 3.50782 5.40612C3.50547 4.7958 3.72535 4.2055 4.1264 3.74544C4.52746 3.28538 5.08226 2.98704 5.68719 2.90612C5.68695 2.90862 5.68695 2.91113 5.68719 2.91362L6.99969 5.85112L5.70782 7.39737C5.69471 7.41246 5.68279 7.42855 5.67219 7.4455C5.57814 7.58982 5.52296 7.756 5.51201 7.92791C5.50106 8.09983 5.53471 8.27166 5.60969 8.42675C6.17594 9.58487 7.34282 10.743 8.51344 11.3086C8.66967 11.3829 8.8425 11.4154 9.01503 11.4029C9.18757 11.3904 9.35392 11.3334 9.49782 11.2374C9.51386 11.2266 9.52931 11.2149 9.54407 11.2024L11.0634 9.90612L14.0009 11.2217H14.0078C13.9279 11.8275 13.63 12.3835 13.1699 12.7855C12.7097 13.1876 12.1189 13.4082 11.5078 13.4061Z"
+                              fill="white"
+                            />
+                          </g>
+                        </svg>
+
+                        833-838-9101
+                      </a>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <h2 class="ff_gilroy_semiBold text_sm text-white lh_25">
+                    Let's build a win-win partnership.
+                  </h2>
+
+                  <button class="hero_btn px-4 px-xl-5 ff_gilroy_medium mt-5">
+                    Work With Us
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
+        <span class="footer_bottom_line d-inline-block w-100 mt-sm-5"></span>
+        <div class="container">
+          <div
+            class="d-flex flex-column flex-sm-row z-1 position-relative justify-content-between w-100 py-3 my-1"
+          >
+            <p class="ff_montserrat fw-normal text_base text_dark_gray">
+              ©2023 Zoplenti. All Rights Reserved.
+            </p>
+            <p class="ff_montserrat fw-normal text_base text_dark_gray">
+              Privacy Policy | Terms and Conditions
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
+    <!-- aos animation -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: true });
+    </script>
+    <!-- for-border-gradient -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Back to top -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var backToTopButton = document.getElementById("back_to_top");
+        if (window.pageYOffset > 300) {
+          backToTopButton.style.display = "block";
+        } else {
+          backToTopButton.style.display = "none";
+        }
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      var backToTopButton = document.getElementById("back_to_top");
+      backToTopButton.addEventListener("click", scrollToTop);
+    </script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <script>
@@ -893,10 +1649,71 @@
         });
       });
     </script>
+
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
       crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
+
+    <!-- slick min js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- slick slider script -->
+    <script>
+      $(".responsive").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+        ],
+      });
+      $(".prev-btn").click(function () {
+        $(".responsive").slick("slickPrev");
+      });
+
+      $(".next-btn").click(function () {
+        $(".responsive").slick("slickNext");
+      });
+    </script>
+    <!-- preloader -->
+
+    <script>
+      window.addEventListener("load", function () {
+        var preloader = document.querySelector(".preloader");
+        preloader.style.display = "none";
+      });
+    </script>
+    <!-- svg0btn -->
   </body>
 </html>
