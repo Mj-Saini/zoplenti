@@ -211,7 +211,7 @@ h1 {
   left: 5%;
 }
 .z_icon_img {
-  top: 25%;
+  top: 9%;
   left: 50%;
   width: 138px;
 }
@@ -498,7 +498,7 @@ ul div span::before {
 }
 @media (max-width: 575.99px) {
   .z_icon_img {
-    top: 20%;
+    top: 0%;
     left: 50%;
     width: 90px;
   }
