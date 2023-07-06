@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Primary Meta Tags -->
     <title>Zoplenti</title>
     <meta name="title" content="Zoplenti" />
@@ -91,11 +93,15 @@
     <div class="preloader">
       <div class="loader"></div>
     </div>
-    <a id="back_to_top" href="#">↑</a>
+    <a id="back_to_top" class="top_icon" href="#">
+      <img
+        class="mb-1 w-100"
+        src="./assets/images/png/top-icon.png"
+        alt="top"
+      />
+    </a>
     <div class="overflow-hidden">
-      <div
-        class="min_vh_100 hero_bg_img d-flex flex-column pb-5 position-relative"
-      >
+      <div class="min_vh_100 hero_bg_img d-flex flex-column position-relative">
         <!-- Header section -->
 
         <navbar id="header" class="position-relative">
@@ -191,8 +197,9 @@
                 </li>
               </ul>
 
-              <button class="common_btn d-lg-flex d-none ff_gilroy_medium">
+              <button class="common_btn d-lg-flex d-none">
                 <svg
+                  class="me-1"
                   width="22"
                   height="22"
                   viewBox="0 0 22 22"
@@ -222,7 +229,7 @@
         <!-- Hero-section -->
         <section
           id="hero"
-          class="flex-grow-1 d-flex hero_sec align-items-center justify-content-center position-relative mt-5 pb-5"
+          class="flex-grow-1 d-flex flex-column hero_sec align-items-center justify-content-center position-relative"
         >
           <img
             class="position-absolute top-50 left_8 translate-middle-y z_icon_hero"
@@ -238,16 +245,17 @@
             class="page_shadow position-absolute hero_sec_shadow z-0"
           ></span>
           <span class="page_shadow position-absolute end-0 top-0 z-0"></span>
-          <div class="container z-1 position-relative">
+          <div class="container z-1 position-relative pb-5 mb-5">
             <div class="row justify-content-center">
-              <div class="col-xl-6 col-lg-8">
+              <div class="col-xl-6 col-lg-8 col-12">
                 <div
-                  class="d-flex flex-column justify-content-center align-items-center w-100 px-lg-4 z-0 position-relative"
+                  class="d-flex flex-column justify-content-center align-items-center w-100 px-lg-5 z-0 position-relative"
                 >
                   <h1
-                    class="ff_gilroy_bold fw-bold text_4xl text-white lh_55 text-center mb-0"
+                    class="ff_gilroy_bold fw-bold text_4xl text-white lh_55 text-center px-xl-5 mx-lg-2 mb-0 pb-1 m-0"
                   >
-                    An Amazon partner you can actually trust
+                    An Amazon partner you can actually
+                    <span class="text_secondary">trust</span>
                   </h1>
 
                   <p
@@ -258,10 +266,10 @@
                   </p>
                   <span class="mt-4 pt-xl-1">
                     <button class="hero_btn ff_gilroy_medium">
-                      Work With Us
+                      How We Work
                     </button></span
                   >
-                  <div class="my-md-5 my-4 position-relative">
+                  <div class="mb-md-5 mb-4 position-relative">
                     <img
                       class="position-absolute z_icon_img translate-middle"
                       src="./assets/images/svg/z-icon.svg"
@@ -282,13 +290,13 @@
                             <div class="d-flex flex-column align-items-center">
                               <i class="fa fa-user invisible"></i>
                               <h2
-                                class="ff_gilroy_medium text_2xl text-white mb-0"
-                                data-max="0.01"
+                                class="ff_gilroy_medium text_2xl text-white my-2"
+                                data-max=".01"
                               >
                                 %
                               </h2>
                               <h2
-                                class="ff_gilroy_regular text_base text-white mt-0 pt-2"
+                                class="ff_gilroy_regular text_base text-white mt-0 pb-3"
                               >
                                 Top Amazon Seller
                               </h2>
@@ -298,13 +306,13 @@
                             <div class="d-flex flex-column align-items-center">
                               <i class="fa fa-code invisible"></i>
                               <h2
-                                class="ff_gilroy_medium text_2xl text-white mb-0"
+                                class="ff_gilroy_medium text_2xl text-white my-2"
                                 data-max="1000"
                               >
                                 +
                               </h2>
                               <h2
-                                class="ff_gilroy_regular text_base text-white mt-0 pt-2"
+                                class="ff_gilroy_regular text_base text-white mt-0 mb-2"
                               >
                                 Unique SKUs
                               </h2>
@@ -314,13 +322,13 @@
                             <div class="d-flex flex-column align-items-center">
                               <i class="fa fa-lock invisible"></i>
                               <h2
-                                class="ff_gilroy_medium text_2xl text-white mb-0"
+                                class="ff_gilroy_medium text_2xl text-white my-2"
                                 data-max="500"
                               >
                                 +
                               </h2>
                               <h2
-                                class="ff_gilroy_regular text_base text-white mt-0 pt-2"
+                                class="ff_gilroy_regular text_base text-white mt-0 mb-2"
                               >
                                 Satisfied Customers
                               </h2>
@@ -334,36 +342,36 @@
               </div>
             </div>
           </div>
+          <div
+            class="hero_bottom_layer position-absolute bottom_custom w-100 d-flex justify-content-center align-items-center z-0"
+          >
+            <a class="bottom_btn transition_all" href="#Partners">
+              <svg
+                width="54"
+                height="53"
+                viewBox="0 0 54 53"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.7">
+                  <path
+                    d="M33.833 33.6938L27.8267 39.7003V11.7972C27.8267 11.3424 27.4579 10.9736 27.0031 10.9736C26.5482 10.9736 26.1795 11.3424 26.1795 11.7972V39.7003L20.173 33.6939C19.8539 33.3857 19.3479 33.3857 19.0287 33.6939C18.7016 34.0099 18.6926 34.5313 19.0085 34.8584L26.4201 42.27C26.4957 42.3457 26.5857 42.4064 26.6859 42.4482C26.7854 42.4897 26.8931 42.5122 27.0031 42.512C27.0206 42.512 27.0362 42.5031 27.0534 42.502C27.1454 42.4963 27.2367 42.483 27.3206 42.4479C27.4211 42.4059 27.5115 42.3449 27.5872 42.2688L34.9975 34.8584C35.3058 34.5392 35.3058 34.0333 34.9975 33.7141C34.6815 33.3869 34.1601 33.3779 33.833 33.6938Z"
+                    fill="#02A9F7"
+                  />
+                  <rect
+                    x="1.49219"
+                    y="1.23535"
+                    width="51.0146"
+                    height="51.0146"
+                    rx="25.5073"
+                    stroke="#02A9F7"
+                    stroke-width="1.5"
+                  />
+                </g>
+              </svg>
+            </a>
+          </div>
         </section>
-        <div
-          class="hero_bottom_layer position-absolute bottom_custom w-100 d-flex justify-content-center align-items-center z-0"
-        >
-          <a href="#Partners">
-            <svg
-              width="54"
-              height="53"
-              viewBox="0 0 54 53"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <g opacity="0.7">
-                <path
-                  d="M33.833 33.6938L27.8267 39.7003V11.7972C27.8267 11.3424 27.4579 10.9736 27.0031 10.9736C26.5482 10.9736 26.1795 11.3424 26.1795 11.7972V39.7003L20.173 33.6939C19.8539 33.3857 19.3479 33.3857 19.0287 33.6939C18.7016 34.0099 18.6926 34.5313 19.0085 34.8584L26.4201 42.27C26.4957 42.3457 26.5857 42.4064 26.6859 42.4482C26.7854 42.4897 26.8931 42.5122 27.0031 42.512C27.0206 42.512 27.0362 42.5031 27.0534 42.502C27.1454 42.4963 27.2367 42.483 27.3206 42.4479C27.4211 42.4059 27.5115 42.3449 27.5872 42.2688L34.9975 34.8584C35.3058 34.5392 35.3058 34.0333 34.9975 33.7141C34.6815 33.3869 34.1601 33.3779 33.833 33.6938Z"
-                  fill="#02A9F7"
-                />
-                <rect
-                  x="1.49219"
-                  y="1.23535"
-                  width="51.0146"
-                  height="51.0146"
-                  rx="25.5073"
-                  stroke="#02A9F7"
-                  stroke-width="1.5"
-                />
-              </g>
-            </svg>
-          </a>
-        </div>
       </div>
       <!-- Leading-Brands -->
       <section class="py-5 my-lg-5 mt-4">
@@ -379,106 +387,106 @@
 
             <div class="overflow-hidden d-flex align-items-center gap-5">
               <div class="moving_animation">
-                <div class="d-flex gap-5 width_custom py-4 mt-5">
+                <div class="d-flex gap-5 w-100 py-4 mt-5">
                   <span
                     ><img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/insta.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/bruder.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/solution.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/heater.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/milwokee.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/smart.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/posture.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/can-c.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/wellgenis.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/genpro.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/itac.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/aramith.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/permobil.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/icorsoft.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/camber.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/oasis.svg"
                       alt="img"
                   /></span>
                   <span>
                     <img
-                      class="cursor_pointer"
+                      class="cursor_pointer hover_on_icon transition_all"
                       src="./assets/images/svg/cracshot.svg"
                       alt="img"
                   /></span>
@@ -575,6 +583,10 @@
                         instead of getting them angry (with you!)…
                       </li>
                     </div>
+                    <li class="ff_gilroy_medium text_2xl text-white mt-4">
+                      In a nutshell, trust not to damage your brand
+                      <span class="fw-bold">just to make a quick buck.</span>
+                    </li>
                   </ul>
                 </div>
                 <div class="my-md-5 my-4 w-100 d-flex justify-content-center">
@@ -604,8 +616,8 @@
                   <p
                     class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
                   >
-                    But Amazon matters, for any brand, and not just in terms of
-                    online sales.
+                    But Amazon matters, for any brand, and not just in
+                    <span class="fw-bold">terms of online sales.</span>
                   </p>
                   <p
                     class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
@@ -657,7 +669,7 @@
                   <p
                     class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
                   >
-                    <span class="ff_gilroy_bold"
+                    <span class="ff_gilroy_bold border_bottom"
                       >We do all those things, and more.</span
                     >
                     But everybody can say that (and unfortunately, they do!).
@@ -717,19 +729,37 @@
                   >
                     If that’s what you look for in a retail partner, I hope
                     you’ll take the time to read more
-                    <button
-                      style="background: #003f5d; padding: 0 2px"
-                      class="cursor_pointer common_btn shadow-none"
+                    <span
+                      class="position-relative d-inline-block cursor_pointer"
                     >
-                      about us
-                    </button>
+                      <img
+                        style="bottom: -12px; right: 15%"
+                        class="position-absolute"
+                        src="./assets/images/svg/default-cursor.svg"
+                        alt="cursor"
+                      />
+                      <button
+                        style="background: #003f5d; padding: 0 2px"
+                        class="cursor_pointer common_btn shadow-none cursor_hover transition_all"
+                      >
+                        about us
+                      </button>
+                    </span>
                     and
-                    <button
-                      style="background: #003f5d; padding: 0 2px"
-                      class="cursor_pointer common_btn shadow-none"
-                    >
-                      how we work</button
-                    >.
+                    <span class="position-relative cursor_pointer">
+                      <img
+                        style="bottom: -15px; right: 5%"
+                        class="position-absolute"
+                        src="./assets/images/svg/default-cursor.svg"
+                        alt="cursor"
+                      />
+                      <button
+                        style="background: #003f5d; padding: 0 2px"
+                        class="cursor_pointer common_btn shadow-none cursor_hover transition_all"
+                      >
+                        how we work</button
+                      >.
+                    </span>
                   </p>
                   <p
                     class="ff_gilroy_regular text_2xl text-white mb-0 mt-3 pt-xl-1"
@@ -757,10 +787,20 @@
                   <p class="ff_gilroy_regular text_base text-white pt-2 mb-0">
                     Founder & CEO
                   </p>
-                  <p class="ff_gilroy_medium text_2xl text-white pt-sm-5 pt-4">
-                    Your products & brand + our custom strategy =
-                    <span class="d-sm-block">everyone's success</span>
-                  </p>
+                  <span class="position-relative d-inline-block">
+                    <img
+                      style="top: -15px; right: -90px"
+                      class="position-absolute"
+                      src="./assets/images/png/z-icon-3rd.png"
+                      alt="z-icon"
+                    />
+                    <p
+                      class="ff_gilroy_medium text_2xl text-white pt-sm-5 pt-4"
+                    >
+                      Your products & brand + our custom strategy =
+                      <span class="d-sm-block">everyone's success</span>
+                    </p>
+                  </span>
                 </div>
               </div>
             </div>
@@ -768,7 +808,7 @@
         </div>
       </section>
       <!-- Amazon-Discover-Brand -->
-      <section class="">
+      <section>
         <div class="container position-relative">
           <img
             class="position-absolute top-50 translate-middle-y amazon_z_icon1"
@@ -780,10 +820,10 @@
             src="./assets/images/svg/amazon-z-icon.svg"
             alt="img"
           />
-          <div class="row justify-content-center pt-5">
+          <div class="row justify-content-center">
             <div class="col-md-10">
               <div
-                class="row px-md-5 py-5 amazon_cards_parent align-items-center overflow-hidden"
+                class="row px-md-5 py-5 amazon_cards_parent align-items-center"
               >
                 <div class="col-lg-6 pe-lg-4">
                   <div
@@ -824,7 +864,7 @@
                       <button
                         class="hero_btn bg_secondary ff_gilroy_medium z-1 position-relative"
                       >
-                        Discover Why
+                        How We Work
                       </button>
                     </span>
                   </div>
@@ -856,55 +896,55 @@
           src="./assets/images/svg/z-icon-in-body.svg"
           alt="icon"
         />
-        <div class="container">
+        <div class="container position-relative">
+          <svg
+            class="position-absolute top-50 start-0 ms-4 d-none d-md-flex translate-middle-y prev-btn cursor_pointer z-2"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.734375"
+              y="0.50390625"
+              width="40"
+              height="40"
+              rx="20.5"
+              fill="transparent"
+              stroke="white"
+            />
+            <path
+              transform="matrix(-1 0 0 1 40.7344 0.00390625)"
+              d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
+              fill="#02A9F7"
+            />
+          </svg>
+          <svg
+            class="position-absolute top-50 end-0 me-4 d-none d-md-flex translate-middle-y next-btn cursor_pointer z-2"
+            width="42"
+            height="42"
+            viewBox="0 0 42 42"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="0.734375"
+              y="0.50390625"
+              width="40"
+              height="40"
+              rx="20.5"
+              fill="transparent"
+              stroke="white"
+            />
+            <path
+              d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
+              fill="#02A9F7"
+            />
+          </svg>
           <div class="responsive mx-auto">
-            <div class="row">
+            <div class="row position-relative">
               <div class="col-lg-10 position-relative">
-                <svg
-                  class="position-absolute top-50 start-0 ms-4 d-none d-md-flex translate-middle-y prev-btn cursor_pointer z-2"
-                  width="42"
-                  height="42"
-                  viewBox="0 0 42 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.734375"
-                    y="0.50390625"
-                    width="40"
-                    height="40"
-                    rx="20.5"
-                    fill="transparent"
-                    stroke="white"
-                  />
-                  <path
-                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
-                    fill="#02A9F7"
-                  />
-                </svg>
-                <svg
-                  class="position-absolute top-50 end-0 me-4 d-none d-md-flex translate-middle-y next-btn cursor_pointer"
-                  width="42"
-                  height="42"
-                  viewBox="0 0 42 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.734375"
-                    y="0.50390625"
-                    width="40"
-                    height="40"
-                    rx="20.5"
-                    fill="transparent"
-                    stroke="white"
-                  />
-                  <path
-                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
-                    fill="#02A9F7"
-                  />
-                </svg>
                 <div class="row justify-content-center">
                   <div class="col-11">
                     <div
@@ -948,51 +988,6 @@
             </div>
             <div class="row">
               <div class="col-lg-10 position-relative">
-                <svg
-                  class="position-absolute top-50 start-0 ms-4 d-none d-md-flex translate-middle-y prev-btn cursor_pointer z-2"
-                  width="42"
-                  height="42"
-                  viewBox="0 0 42 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.734375"
-                    y="0.50390625"
-                    width="40"
-                    height="40"
-                    rx="20.5"
-                    fill="transparent"
-                    stroke="white"
-                  />
-                  <path
-                    transform="matrix(-1 0 0 1 40.7344 0.00390625)"
-                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
-                    fill="#02A9F7"
-                  />
-                </svg>
-                <svg
-                  class="position-absolute top-50 end-0 me-4 d-none d-md-flex translate-middle-y next-btn cursor_pointer"
-                  width="42"
-                  height="42"
-                  viewBox="0 0 42 42"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <rect
-                    x="0.734375"
-                    y="0.50390625"
-                    width="40"
-                    height="40"
-                    rx="20.5"
-                    fill="transparent"
-                    stroke="white"
-                  />
-                  <path
-                    d="M17.6094 26.6289C17.3802 26.3997 17.2656 26.1081 17.2656 25.7539C17.2656 25.3997 17.3802 25.1081 17.6094 24.8789L22.4844 20.0039L17.6094 15.1289C17.3802 14.8997 17.2656 14.6081 17.2656 14.2539C17.2656 13.8997 17.3802 13.6081 17.6094 13.3789C17.8385 13.1497 18.1302 13.0352 18.4844 13.0352C18.8385 13.0352 19.1302 13.1497 19.3594 13.3789L25.1094 19.1289C25.2344 19.2539 25.3231 19.3893 25.3756 19.5352C25.4281 19.681 25.454 19.8372 25.4531 20.0039C25.4531 20.1706 25.4269 20.3268 25.3744 20.4727C25.3219 20.6185 25.2335 20.7539 25.1094 20.8789L19.3594 26.6289C19.1302 26.8581 18.8385 26.9727 18.4844 26.9727C18.1302 26.9727 17.8385 26.8581 17.6094 26.6289Z"
-                    fill="#02A9F7"
-                  />
-                </svg>
                 <div class="row justify-content-center">
                   <div class="col-11">
                     <div

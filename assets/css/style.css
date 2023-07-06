@@ -30,6 +30,13 @@
   width: 300px;
   height: 100px;
 }
+.bottom_btn:hover {
+  transform: translateY(10%);
+}
+.hover_on_icon:hover {
+  transform: translateY(-20%);
+}
+
 /* Header-section */
 * {
   padding: 0%;
@@ -71,7 +78,8 @@
   transform: translate(0, -11px) rotate(45deg);
 }
 .hero_counter_bg {
-  background: #56c4ff38;
+  background: rgba(86, 197, 255, 0.11);
+
   top: 95%;
   border-radius: 10px;
 }
@@ -119,6 +127,11 @@ button.common_btn:hover svg path {
   --bs-btn-focus-shadow-rgb: transparent !important;
   --bs-btn-active-bg: transparent !important;
 }
+#header button {
+  font-family: "Gilroy_regular";
+  font-weight: 400;
+  font-size: var(--text-base);
+}
 .dropdown-toggle::after {
   display: none !important;
 }
@@ -138,6 +151,9 @@ button.common_btn:hover svg path {
   background-color: #022333 !important;
   border: 1px solid #02a9f7 !important;
   box-shadow: 0px 0px 11px 0px #02a9f754 !important;
+  font-family: "Gilroy_regular";
+  font-weight: 400;
+  font-size: var(--text-base);
 }
 .btn:hover {
   background-color: transparent !important;
@@ -172,7 +188,7 @@ button.common_btn:hover svg path {
 .hero_bg_img {
   background-image: url(../images/png/hero-bg-img.png);
   background-size: cover;
-  background-position: 0 0;
+  background-position: top;
   background-repeat: no-repeat;
   height: 100%;
   position: relative;
@@ -221,7 +237,13 @@ h1 {
 
 .moving_animation {
   position: relative;
-  animation: slide 15s linear 0s infinite forwards;
+  animation: slide 85s linear 5s infinite forwards;
+}
+.border_bottom {
+  border-bottom: 2px solid white !important;
+}
+.cursor_hover:hover {
+  color: #02a9f7 !important;
 }
 @keyframes slide {
   0% {
@@ -275,7 +297,7 @@ ul div span::before {
 }
 /* Amazon-Discover-Brand */
 .amazon_cards_parent {
-  height: 550px;
+  height: 400px;
   background: #020202;
 }
 .amazon_card_bg {
@@ -322,9 +344,6 @@ ul div span::before {
   z-index: 0 !important;
   position: relative;
   stroke: none;
-}
-.matrix_rotate {
-  transform: rotate(180deg) !important;
 }
 
 /* Faq */
@@ -528,4 +547,18 @@ ul div span::before {
   text-align: center;
   cursor: pointer;
   z-index: 998;
+}
+.top_icon {
+  animation: top_icon 3s infinite;
+}
+@keyframes top_icon {
+  0% {
+    transform: translateY(-20%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-20%);
+  }
 }
