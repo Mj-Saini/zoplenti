@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
-
 .ff_jost {
   font-family: "Jost", sans-serif;
 }
@@ -7,44 +6,32 @@
 .ff_montserrat {
   font-family: "Montserrat", sans-serif;
 }
-
 .ff_gilroy_regular {
   font-family: Gilroy_regular;
 }
-
 .ff_gilroy_medium {
   font-family: Gilroy_medium;
 }
-
 .ff_gilroy_semiBold {
   font-family: Gilroy_semiBold;
 }
-
 .ff_gilroy_bold {
   font-family: Gilroy_Bold;
 }
-
 @font-face {
   font-family: Gilroy_regular;
-
   src: url("../fonts/Gilroy-Regular.ttf");
 }
-
 @font-face {
   font-family: Gilroy_medium;
-
   src: url("../fonts/Gilroy-Medium.ttf");
 }
-
 @font-face {
   font-family: Gilroy_semiBold;
-
   src: url("../fonts/Gilroy-SemiBold.ttf");
 }
-
 @font-face {
   font-family: Gilroy_Bold;
-
   src: url("../fonts/Gilroy-Bold.ttf");
 }
 :root {
@@ -82,49 +69,37 @@
 .text_xsm {
   font-size: var(--text-xsm);
 }
-
 .text_base {
   font-size: var(--text-base);
 }
-
 .text_sm {
   font-size: var(--text-sm);
 }
-
 .text_md {
   font-size: var(--text-md);
 }
-
 .text_xl {
   font-size: var(--text-xl);
 }
-
 .text_2xl {
   font-size: var(--text-2xl);
 }
-
 .text_2xxl {
   font-size: var(--text-2xxl);
 }
-
 .text_3xl {
   font-size: var(--text-3xl);
 }
-
 .text_3xxl {
   font-size: var(--text-3xxl);
 }
-
 .text_4xl {
   font-size: var(--text-4xl);
 }
-
 .text_5xl {
   font-size: var(--text-5xl);
 }
-
 /* line-height */
-
 .lh_25 {
   line-height: var(--lh-25);
 }
@@ -134,41 +109,32 @@
 .lh_35 {
   line-height: var(--lh-35);
 }
-
 .lh_49 {
   line-height: var(--lh-49);
 }
 .lh_55 {
   line-height: var(--lh-55);
 }
-
 /* text-color */
-
 .text_white {
   color: var(--text-white);
 }
-
 .text_secondary {
   color: var(--text-secondary);
 }
-
 .text_light_gray {
   color: var(--text-light-gray);
 }
-
 .text_gray {
   color: var(--text-gray);
 }
-
 .text_dark_gray {
   color: var(--text-dark-gray);
 }
 .text_light_gray {
   color: var(--text-light-gray);
 }
-
 /* bg-color */
-
 .bg_dark {
   background-color: var(--bg-dark);
 }
