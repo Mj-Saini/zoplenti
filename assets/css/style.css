@@ -194,7 +194,7 @@ button.common_btn:hover svg path {
 }
 
 .hero_bg_img {
-  background-image: url(../images/png/hero-bg-img.png);
+  background-image: url(../images/webp/hero-bg-img.webp);
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -242,26 +242,32 @@ h1 {
 .width_custom {
   width: 1440px;
 }
-
-.moving_animation {
-  position: relative;
-  animation: slide 205s linear 5s infinite forwards;
-}
 .border_bottom {
   border-bottom: 2px solid white !important;
 }
 .cursor_hover:hover {
   color: #02a9f7 !important;
 }
+.moving_animation {
+  position: relative;
+  overflow: hidden;
+}
+
+.moving_animation > div {
+  display: flex;
+  animation: slide 15s linear infinite;
+}
+
+.moving_animation > div > span {
+  flex-shrink: 0;
+}
+
 @keyframes slide {
   0% {
-    left: 0%;
-  }
-  50% {
-    left: -50%;
+    transform: translateX(0%);
   }
   100% {
-    left: -100%;
+    transform: translateX(-100%);
   }
 }
 
