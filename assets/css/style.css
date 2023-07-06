@@ -237,7 +237,7 @@ h1 {
 
 .moving_animation {
   position: relative;
-  animation: slide 85s linear 5s infinite forwards;
+  animation: slide 205s linear 5s infinite forwards;
 }
 .border_bottom {
   border-bottom: 2px solid white !important;
@@ -500,35 +500,22 @@ ul div span::before {
 }
 
 /* preloader */
-
 .preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #f1f1f1;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #031427;
+  z-index: 999;
 }
 
-.preloader .loader {
-  border: 8px solid #3498db;
-  border-top: 8px solid #f1f1f1;
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  animation: spin 1.5s linear infinite;
+.preloaderImg {
+  animation: preloader_img 1.2s ease-in-out infinite alternate;
 }
 
-@keyframes spin {
+@keyframes preloader_img {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
+
   100% {
-    transform: rotate(360deg);
+    transform: scale(1.2);
   }
 }
 /* back to top */
