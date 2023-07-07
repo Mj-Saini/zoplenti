@@ -1,6 +1,18 @@
 /* common classess */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  text-decoration: none !important;
+  list-style-type: none;
+  box-sizing: border-box;
+}
 .cursor_pointer {
   cursor: pointer;
+}
+
+body {
+  overflow-x: hidden;
 }
 .common_btn {
   background: #022332;
@@ -46,13 +58,7 @@
 }
 
 /* Header-section */
-* {
-  padding: 0%;
-  margin: 0%;
-  text-decoration: none !important;
-  list-style-type: none;
-  box-sizing: border-box;
-}
+
 .text_shadow {
   text-shadow: 0px 1.2456979751586914px 4.359943389892578px 0px #00000040;
 }
@@ -309,6 +315,10 @@ ul div span::before {
 .content_position {
   position: absolute;
 }
+.partner_z_icon {
+  top: -15px;
+  left: 54%;
+}
 /* Amazon-Discover-Brand */
 .amazon_cards_parent {
   height: 400px;
@@ -372,6 +382,9 @@ ul div span::before {
 .accordion-button:not(.collapsed) {
   background-color: transparent !important;
 }
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
 .accordion {
   --bs-accordion-bg: transparent !important;
   --bs-accordion-border-color: #016594 !important;
@@ -385,6 +398,10 @@ ul div span::before {
   border-bottom: 1px solid #0c62e46c !important;
   font-size: var(--text-md) !important;
   font-weight: 500 !important;
+  padding-bottom: 24px !important;
+}
+.accordion-item:hover {
+  background-color: #0c62e46c !important;
 }
 .accordion-button::after {
   background-color: transparent !important;
@@ -395,6 +412,9 @@ ul div span::before {
   color: white !important;
   font-weight: normal !important;
   font-size: var(--text-base) !important;
+}
+.accordion-body:hover {
+  background: #002334 !important;
 }
 
 /* counter */
@@ -459,6 +479,9 @@ ul div span::before {
   }
 }
 @media (max-width: 1200px) {
+  .frame_img_size {
+    height: 2595px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -491,6 +514,11 @@ ul div span::before {
     height: auto;
     background: #020202;
   }
+  .partner_z_icon {
+    top: -50px;
+    right: 0px;
+    width: 120px;
+  }
 }
 @media (max-width: 767.99px) {
   .content_position {
@@ -500,6 +528,11 @@ ul div span::before {
     background: #002334;
     border-radius: 6px;
     border: 1px solid #02a9f799;
+  }
+  .partner_z_icon {
+    top: -50px;
+    right: 0px;
+    width: 80px;
   }
 }
 @media (max-width: 575.99px) {
