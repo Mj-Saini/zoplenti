@@ -392,16 +392,16 @@ ul div span::before {
 .accordion-item {
   border: transparent !important;
   border-bottom: 1px solid #0c63e4;
+  border-bottom: 1px solid #0c62e46c !important;
 }
 .accordion-button {
   background-color: transparent !important;
-  border-bottom: 1px solid #0c62e46c !important;
   font-size: var(--text-md) !important;
   font-weight: 500 !important;
   padding-bottom: 24px !important;
 }
 .accordion-item:hover {
-  background-color: #0c62e46c !important;
+  background-color: #002334 !important;
 }
 .accordion-button::after {
   background-color: transparent !important;
@@ -412,9 +412,6 @@ ul div span::before {
   color: white !important;
   font-weight: normal !important;
   font-size: var(--text-base) !important;
-}
-.accordion-body:hover {
-  background: #002334 !important;
 }
 
 /* counter */
